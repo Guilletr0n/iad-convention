@@ -1,12 +1,16 @@
 import React from 'react';
 import config from '../../config';
+import { StaticImage } from "gatsby-plugin-image";
+
 export default function SiteHeader() {
   return (
-    <h1 className="site-heading text-center text-white d-none d-lg-block">
-      <span className="site-heading-upper text-primary mb-3">
-        {config.subHeading}
-      </span>
-      <span className="site-heading-lower">{config.heading}</span>
-    </h1>
+    <div>
+      <StaticImage 
+        src="../assets/images/logo-horizontal.png"
+        alt="logo"
+        width={400}
+        height={70}
+      />
+    </div>
   );
 }
