@@ -36,8 +36,14 @@ class Layout extends Component {
                 { name: 'description', content: 'Casual' },
                 { name: 'keywords', content: 'site, web' },
               ]}
+              link={[
+                { "rel": "icon", "type": "image/png", "href": "../assets/favicon/favicon-16x16.png", sizes:"16x16", type:"image/png" },
+                { "rel": "apple-touch-icon", "type": "image/png", "href": "../assets/favicon/favicon-32x32.png", sizes:"32x32", type:"image/png" },
+                { "rel": "apple-touch-icon", "type": "image/png", "href": "../assets/favicon/safari-pinned-tab.svg" },
+                { "rel": "mask-icon", "type": "image/png", "href": "../assets/favicon/safari-pinned-tab.svg", color:"#5bbad5" },
+              ]}
             >
-              <html lang="en" />
+              <html lang="es" />
             </Helmet>
             <div className={'page-top'}>
               {!noSiteHeader ? <SiteHeader /> : null}

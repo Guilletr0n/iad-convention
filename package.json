@@ -1,14 +1,14 @@
 {
-    "name": "gatsby-starter-casual",
+    "name": "iadconvention22",
     "version": "0.0.2",
-    "description": "Gatsby.js V4 starter template based on Casual by startbootstrap",
+    "description": "IAD 2022 Convention Info Site",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-casual.git"
+        "url": ""
     },
     "author": {
-        "name": "Anubhav Srivastava",
-        "email": "anubhav.srivastava00@gmail.com"
+        "name": "Guillermo Gonzalez",
+        "email": "contact@guids.dev"
     },
     "dependencies": {
         "gatsby": "4.2.0",
@@ -48,13 +48,8 @@
         "rimraf": "^3.0.2"
     },
     "keywords": [
-        "gatsby",
-        "gatsby-starter",
-        "gatsby-starter-casual"
+        "iad"
     ],
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/anubhavsrivastava/gatsby-starter-casual/issues"
-    },
-    "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-casual#readme"
+    "homepage": "convencioniadespana.com"
 }

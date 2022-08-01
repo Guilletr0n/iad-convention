@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import config from '../../config';
 import { Link } from 'gatsby';
+import { withTranslation } from 'gatsby-plugin-react-i18next';
 
-export default class Header extends Component {
+class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,6 +17,7 @@ export default class Header extends Component {
   render() {
     const { openMenu } = this.state;
     const { activeLink } = this.props;
+    const { t } = this.props;
     return (
       <nav className="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div className="container">
@@ -47,49 +49,55 @@ export default class Header extends Component {
                 }`}
               >
                 <Link className="nav-link text-uppercase text-expanded" to="/">
-                  Home
+                {t('Home')}
                 </Link>
               </li>
               <li
                 className={`nav-item px-lg-4 ${
-                  activeLink === 'about' ? 'active' : ''
+                  activeLink === 'program' ? 'active' : ''
                 }`}
               >
                 <Link
                   className="nav-link text-uppercase text-expanded"
-                  to="/about"
+                  to="/program"
                 >
-                  About
+                  {t('Program')}
                 </Link>
               </li>
               <li
                 className={`nav-item px-lg-4 ${
-                  activeLink === 'products' ? 'active' : ''
+                  activeLink === 'location' ? 'active' : ''
                 }`}
               >
                 <Link
                   className="nav-link text-uppercase text-expanded"
-                  to="/products"
+                  to="/location"
                 >
-                  Products
+                  {t('Location')}
                 </Link>
               </li>
               <li
                 className={`nav-item px-lg-4 ${
-                  activeLink === 'store' ? 'active' : ''
+                  activeLink === 'hotels' ? 'active' : ''
                 }`}
               >
+                <Link
+                  className="nav-link text-uppercase text-expanded"
+                  to="/hotels"
+                >
+                  {t('Hotels')}
+                </Link>
                 </li>
                 <li
                 className={`nav-item px-lg-4 ${
-                  activeLink === 'registration' ? 'active' : ''
+                  activeLink === 'register' ? 'active' : ''
                 }`}
               >
                 <Link
                   className="nav-link text-uppercase text-expanded"
-                  to="/registration"
+                  to="/register"
                 >
-                  Registration
+                  {t('Register')}
                 </Link>
               </li>
             </ul>
@@ -99,3 +107,5 @@ export default class Header extends Component {
     );
   }
 }
+
+export default withTranslation()(Header);
