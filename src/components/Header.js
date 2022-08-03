@@ -90,14 +90,14 @@ class Header extends Component {
                 </li>
                 <li
                 className={`nav-item px-lg-4 ${
-                  activeLink === 'register' ? 'active' : ''
+                  activeLink === 'tickets' ? 'active' : ''
                 }`}
               >
                 <Link
                   className="nav-link text-uppercase text-expanded"
-                  to="/register"
+                  to="/tickets"
                 >
-                  {t('Register')}
+                  {t('Tickets')}
                 </Link>
               </li>
             </ul>

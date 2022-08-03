@@ -6,10 +6,10 @@ import Layout from '../components/Layout';
 const RegistrationPage = () => {
   const {t} = useTranslation();
   return (
-  <Layout activeLink="register">
+  <Layout activeLink="tickets">
     <section className="page-section">
       <div className="container">
-        {t('Register')}
+        {t('Entradas')}
       </div>
     </section>
   </Layout>

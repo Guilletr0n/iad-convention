@@ -2,8 +2,6 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-import about from '../assets/images/about.jpg';
-
 const IndexPage = () => (
   <Layout activeLink="store">
     <section className="page-section cta">
@@ -67,11 +65,7 @@ const IndexPage = () => (
 
     <section className="page-section about-heading">
       <div className="container">
-        <img
-          className="img-fluid rounded about-heading-img mb-3 mb-lg-0"
-          src={about}
-          alt=""
-        />
+        
         <div className="about-heading-content">
           <div className="row">
             <div className="col-xl-9 col-lg-10 mx-auto">

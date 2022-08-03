@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Hero from "../assets/video/hero.mp4";
 
-import intro from '../assets/images/intro.jpg';
 
 const IndexPage = () => {
   const {t} = useTranslation();

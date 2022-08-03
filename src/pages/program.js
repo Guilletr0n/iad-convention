@@ -9,7 +9,7 @@ const ProgramPage = () => {
     <Layout activeLink="program">
       <section className="page-section">
         <div className="container">
-          <h2>{t('Program')}</h2>
+          <h2>{t('Programa')}</h2>
           <p>
             {t('La Convención Nacional de 2022 es uno de los eventos más importantes de la red iad. Un momento de reencuentro y de celebración de los éxitos cosechados. Este año se celebrará en el Hotel W de Barcelona y es exclusivamente para los miembros del Grupo iad.')}
           </p>

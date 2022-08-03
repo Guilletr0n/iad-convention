@@ -73,6 +73,7 @@ p {
 }
 
 .hero-section {
+  position: relative;
   width: 100%;
   .container {
     background-color: #FFFFFF;
@@ -80,4 +81,16 @@ p {
       width: 100%;
     }
   }
+}
+
+.hero__title {
+  position: absolute;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 3.22rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  top: 450px;
+  text-align: center;
+  text-shadow: 4px 3px 0 rgba(0,0,0,0.5);
 }
