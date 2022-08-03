@@ -10,13 +10,13 @@ const IndexPage = () => {
   const {t} = useTranslation();
   return (
   <Layout activeLink="home">
-    <section className="page-section clearfix">
+    <section className="page-section clearfix hero-section">
       <div className="container">
         
         <div className="col-3">
         
         </div>
-        <video width="320" height="240" preload="auto" autoPlay muted>
+        <video className="hero-video" width="100%" height="auto" preload="auto" autoPlay muted>
           <source src={Hero} type="video/mp4"/>
           {t('Su navegador no puede reproducir el video')}
         </video>

@@ -11,7 +11,7 @@ export default function Footer() {
         width={140}
         height={152}
       />
-        <p className="m-0 small">Contineroso</p>
+        <p className="m-0 small">Pie de página</p>
       </div>
     </footer>
   );

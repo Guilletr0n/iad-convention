@@ -1,6 +1,7 @@
 .footer {
   background-color: fade-out($secondary, 0.1);
-  position: fixed;
-  bottom: 0;
   width: 100vw;
+  @include footer-font;
+  color: black;
+  font-size: 3rem
 }
