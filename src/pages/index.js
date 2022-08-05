@@ -11,22 +11,20 @@ const IndexPage = () => {
   <Layout activeLink="home">
     <section className="page-section clearfix hero-section">
       <div className="container">
-        
-        <div className="col-3">
-        
+        <div className="row">
+          <video className="hero-video" width="100%" height="auto" preload="auto" autoPlay muted loop>
+            <source src={Hero} type="video/mp4"/>
+            {t('Su navegador no puede reproducir el video')}
+          </video>
         </div>
-        <video className="hero-video" width="100%" height="auto" preload="auto" autoPlay muted>
-          <source src={Hero} type="video/mp4"/>
-          {t('Su navegador no puede reproducir el video')}
-        </video>
+        <div className="row">
+        <p className="hero__text">
+          {t('La Convención Nacional de 2022 es uno de los eventos más importantes de la red iad. Un momento de reencuentro y de celebración de los éxitos cosechados. Este año se celebrará en el Hotel W de Barcelona y es exclusivamente para los miembros del Grupo iad.')}
+        </p>
+      </div>
       </div>
     </section>
-
-    <section className="page-section cta">
-      <div className="container">
-       
-      </div>
-    </section>
+    
   </Layout>
   )
   };

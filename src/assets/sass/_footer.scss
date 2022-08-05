@@ -1,7 +1,17 @@
 .footer {
-  background-color: fade-out($secondary, 0.1);
+  background-color: fade-out($color-blue-dark, 0.1);
   width: 100vw;
-  @include footer-font;
-  color: black;
-  font-size: 3rem
+  @include avenir-font;
+  color: white;
+
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+      padding-bottom: 2px;
+      border-bottom: 2px solid white;
+    }
+  }
 }
+
+
