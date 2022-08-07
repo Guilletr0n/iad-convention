@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import config from '../../config';
-import { Link } from 'gatsby';
-import { withTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, withTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image";
 class Header extends Component {
   constructor(props) {
