@@ -42,7 +42,18 @@ p {
 .page-section {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  background-color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
+  .container {
+    padding: 5rem 0;
+  }
 }
+
+.slider-container {
+  overflow-x: scroll;
+}
+
 
 .section-heading {
   text-transform: uppercase;
@@ -59,6 +70,11 @@ p {
     font-size: 3rem;
     font-weight: 100;
   }
+}
+
+.body__text {
+  font-size: $font-M;
+  line-height: 2;
 }
 
 .bg-faded {
@@ -90,16 +106,25 @@ p {
   position: absolute;
   width: 100%;
   color: #FFFFFF;
-  font-size: 3.22rem;
+  text-shadow: 1px 2px 0 rgba(0,0,0,0.5);
   font-weight: 800;
   text-transform: uppercase;
-  top: 450px;
   text-align: center;
-  text-shadow: 4px 3px 0 rgba(0,0,0,0.5);
+  font-size: $font-XL;
+  z-index: 1;
+  top: 40%;
 }
 
 .hero__text {
   @include avenir-font;
   padding: $font-XXXL;
   font-size: $font-XL;
+}
+
+@media only screen and (min-width: $b-md) {
+  .hero__title {
+    font-size: $font-XXXL;
+    text-shadow: 4px 3px 0 rgba(0,0,0,0.5);
+
+  }
 }

@@ -1,23 +1,76 @@
-.program_blocks {
-  display: flex;
-  flex-direction: row;
-  
-  &__item {
+@mixin alternate-color {
+  background-color: $color-blue-dark;
+  color: white;
+}
+
+@mixin program-block-items {
+  .program_blocks__item {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    height: 140px;
     padding: 1rem;
-    flex-basis: 25%;
-    
-    &:nth-child(odd) {
+    justify-content: space-evenly
+  }
+  
+  .program_blocks__item__time {
+    font-size: 2rem;
+  }
+  .program_blocks__item__description {
+    text-align: center;
+  }
+}
+
+.program_blocks--slider {
+  display: flex;
+  justify-content: start;
+  min-width: $cw-xl;
+  .program_blocks__item:nth-child(odd) {
+    @include alternate-color;
+  }
+  
+  @include program-block-items;
+
+  .program_blocks__item {
+    width: 200px;
+    height: 170px;
+  }
+}
+
+@media only screen and (min-width: $b-xxl) {
+  .program_blocks--slider {
+    flex-direction: row;
+    justify-content: center;
+    .program_blocks__item {
+      display: flex;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    .program_blocks__item:nth-child(odd) {
       background-color: $color-blue-dark;
       color: white;
     }
-    &__time {
-      font-size: 2rem;
+  }
+}
+
+.program_blocks--grid {
+  @include program-block-items;
+
+  .program_blocks__item:last-child {
+    @include alternate-color;
+  }
+  .program_blocks__item:nth-child(3n+1) {
+    @include alternate-color;
+  }
+
+  @media only screen and (min-width: $b-md) {
+    .program_blocks__item:nth-child(4) {
+      background-color: transparent;
+      color: black;
     }
-    &__description {
-      text-align: center;
+    .program_blocks__item:nth-child(odd) {
+      @include alternate-color;
     }
   }
 }

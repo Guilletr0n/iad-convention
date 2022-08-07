@@ -1,0 +1,56 @@
+.hotels-blocks {
+  .map__btn,
+  .email__btn {
+    background-color: $color-blue-dark;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+    text-decoration: none;
+    padding: 1rem 2rem 1rem 3rem;
+    margin: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: 0.8rem center;
+    overflow: hidden;
+    transition: transform 0.1s linear;
+    &:hover {
+      filter: contrast(150%);
+      transform: scale(1.05)
+    }
+  }
+ .map__btn {
+  background-image: url('../icons/icon-map.svg');
+  background-size: 1.5rem;
+  
+ }
+ .email__btn {
+  background-image: url('../icons/icon-email.svg');
+  background-size: 1.5rem;
+ }
+  ul {
+    padding: 0;
+  }
+  p, li {
+    font-size: $font-S;
+    text-align: center;
+    list-style-type: none;
+    text-indent: 0;
+    padding: 0 2rem;
+  }
+  &__item {
+    text-align: center;
+    &:not(:last-child) {
+      border-right: 2px solid $color-blue-dark;
+    }
+    &-title {
+      @include avenir-font;
+      text-align: center;
+      font-weight: 800;
+      font-size: $font-L;
+      color: $color-blue-dark;
+      margin-bottom: 1rem;
+    }
+  }
+  
+}

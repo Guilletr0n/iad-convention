@@ -6,3 +6,31 @@
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+.btn {
+  background-color: $color-blue-dark;
+  color: white;
+  text-align: center;
+  border-radius: 16px;
+  text-decoration: none;
+  padding: 1rem 2rem 1rem 3rem;
+  margin: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: 0.8rem center;
+  transition: background-position 0.1s linear, transform 0.1s linear;
+  
+}
+
+.btn--ticket {
+  background-image: url('../icons/icon-ticket.svg');
+  background-size: 3rem;
+  background-position: -20px center;
+  &:hover {
+    filter: contrast(150%);
+    color: white;
+    background-position: -5px center;
+    transform: scale(1.05)
+  }
+}
