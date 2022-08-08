@@ -122,7 +122,7 @@ const ProgramPage = () => {
             height="186"
             />
             <h3 className="hotels-grid__item-title">{t('H10 Marina')}</h3>
-            <div>
+            <div className="hotels-grid__item-address">
               <p>{t('Dirección')}</p>
               <p>Olympic Village, Av. del Bogatell, 64, 68, 08005 Barcelona</p>
               <a className="map__btn" target="_blank" href="https://g.page/h10-marina-barcelona?share">Cómo llegar</a>
@@ -154,20 +154,24 @@ const ProgramPage = () => {
               height="186"
               />
               <h3 className="hotels-grid__item-title">{t('H10 Marina')}</h3>
-              <div>
-              <p>{t('Dirección')}</p>
-              <p>Olympic Village, Av. del Bogatell, 64, 68, 08005 Barcelona</p>
-              <a className="map__btn" target="_blank" href="https://g.page/h10-marina-barcelona?share">Cómo llegar</a>
-              <p>{t('Precios:')}</p>
-              <p>{t('DUI: XXX €')}</p>
-              <p>{t('DOB: XXX €')}</p>
-              <p>{t('El acuerdo incluye')}</p>
-              <ul>
-                <li>{t('Habitación superior')}</li>
-                <li>{t('Desayuno')}</li>
-                <li>{t('Acceso al spa')}</li>
-              </ul>
+              
+              <div className="hotels-grid__item-address">
+                <p>{t('Dirección')}</p>
+                <p>Olympic Village, Av. del Bogatell, 64, 68, 08005 Barcelona</p>
+                <a className="map__btn" target="_blank" href="https://g.page/h10-marina-barcelona?share">Cómo llegar</a>
               </div>
+              <div className="hotels-grid__item-conditions">
+                <p>{t('Precios:')}</p>
+                <p>{t('DUI: XXX €')}</p>
+                <p>{t('DOB: XXX €')}</p>
+                <p>{t('El acuerdo incluye')}</p>
+                <ul>
+                  <li>{t('Habitación superior')}</li>
+                  <li>{t('Desayuno')}</li>
+                  <li>{t('Acceso al spa')}</li>
+                </ul>
+              </div>
+
               <a 
                   className="email__btn"
                   href="#mailgo"
@@ -175,7 +179,9 @@ const ProgramPage = () => {
                   data-domain="h10hotels.com"
                   >{t('Reservar')}
               </a>
+
           </div>
+
           <div className="hotels-grid__item">
             <StaticImage 
               src="../assets/images/exe-hotels-logo.png"
@@ -184,26 +190,32 @@ const ProgramPage = () => {
               height="186"
             />
             <h3 className="hotels-grid__item-title">Hotel Exe Cristal Palace</h3>
-            <div>
-            <p>{t('Dirección')}</p>
-            <p>Carrer de la Diputació, 257, 08007 Barcelona</p>
-            <a className="map__btn" target="_blank" href="https://g.page/hotel-exe-cristal-palace?share">Cómo llegar</a>
-            <p>{t('Precios:')}</p>
-            <p>{t('DUI: 153 €')}</p>
-            <p>{t('DOB: 162 €')}</p>
-            <p>{t('Precios por habitación y noche')}</p>
-            <p>{t('IVA y desayuno incluido')}</p>
-            <p>{t('Tasa turística no incluida')}</p>
-            <p>{t('Para realizar reserva, es necesario escribir un email e indicar que se trata de una reserva del acuerdo corporate IAD.')}</p>
+            
+            <div className="hotels-grid__item-address">
+              <p>{t('Dirección')}</p>
+              <p>Carrer de la Diputació, 257, 08007 Barcelona</p>
+              <a className="map__btn" target="_blank" href="https://g.page/hotel-exe-cristal-palace?share">Cómo llegar</a>
             </div>
-            <a 
-                className="email__btn"
-                href="#mailgo"
-                data-address="reservas"
-                data-domain="execristalpalace.com"
-                data-subject="Reserva del acuerdo corporate IAD"
-                >{t('Reservar')}
-            </a>
+            <div className="hotels-grid__item-conditions">
+              <p>{t('Precios:')}</p>
+              <p>{t('DUI: 153 €')}</p>
+              <p>{t('DOB: 162 €')}</p>
+              <p>{t('Precios por habitación y noche')}</p>
+              <p>{t('IVA y desayuno incluido')}</p>
+              <p>{t('Tasa turística no incluida')}</p>
+              <p>{t('Para realizar reserva, es necesario escribir un email e indicar que se trata de una reserva del acuerdo corporate IAD.')}</p>
+            </div>
+            
+              <a 
+                  className="email__btn"
+                  href="#mailgo"
+                  data-address="reservas"
+                  data-domain="execristalpalace.com"
+                  data-subject="Reserva del acuerdo corporate IAD"
+                  >{t('Reservar')}
+              </a>
+            
+            
           </div>
           <div className="hotels-grid__item">
           <StaticImage 
@@ -213,16 +225,20 @@ const ProgramPage = () => {
               height="186"
             />
             <h3 className="hotels-grid__item-title">{t('Exe Plaza')}</h3>
-            <p>{t('Dirección')}</p>
-            <p>Ronda de la Universitat, 18, 08007 Barcelona</p>
-            <a className="map__btn" target="_blank" href="https://g.page/hotel-exe-plaza-catalunya?share">{t('Cómo llegar')}</a>
-            <p>{t('Precios:')}</p>
-            <p>{t('Dui: 177€')}</p>
-            <p>{t('Doble: 185€')}</p>
-            <p>{t('Precios por habitación y noche')}</p>
-            <p>{t('IVA y desayuno incluido')}</p>
-            <p>{t('Tasa turística no incluida')}</p>
-            <p>{t('Para realizar reserva, escribir email e indicar que solicitan una habitación en referencia a la CONVENCIÓN NACIONAL IAD')}</p>
+            <div className="hotels-grid__item-address">
+              <p>{t('Dirección')}</p>
+              <p>Ronda de la Universitat, 18, 08007 Barcelona</p>
+              <a className="map__btn" target="_blank" href="https://g.page/hotel-exe-plaza-catalunya?share">{t('Cómo llegar')}</a>
+            </div>
+            <div className="hotels-grid__item-conditions">
+              <p>{t('Precios:')}</p>
+              <p>{t('Dui: 177€')}</p>
+              <p>{t('Doble: 185€')}</p>
+              <p>{t('Precios por habitación y noche')}</p>
+              <p>{t('IVA y desayuno incluido')}</p>
+              <p>{t('Tasa turística no incluida')}</p>
+              <p>{t('Para realizar reserva, escribir email e indicar que solicitan una habitación en referencia a la CONVENCIÓN NACIONAL IAD')}</p>
+            </div>
             <a 
               className="email__btn"
               href="#mailgo"
@@ -239,15 +255,19 @@ const ProgramPage = () => {
               height="186"
             />
           <h3 className="hotels-grid__item-title">{t('Hotel KK')}</h3>
+          <div className="hotels-grid__item-address">
             <p>{t('Dirección')}</p>
             <p>{t('Passeig de Picasso, 26, 30, 08003 Barcelona')}</p>
             <a className="map__btn" target="_blank" href="https://goo.gl/maps/NTgJmF7L33pSrh49A">{t('Cómo llegar')}</a>
-            <p>{t('Precios:')}</p>
-            <p>{t('Dui: XXX€')}</p>
-            <p>{t('Doble: XXX€')}</p>
-            <p>{t('El acuerdo incluye:')}</p>
-            <p>{t('Habitación Cosy Urban. (tasa turística no incluida)')}</p>
-            <p>{t('Reservas deben enviar un correo e indicar la referencia IAD-CN22')}</p>
+            </div>
+            <div className="hotels-grid__item-conditions">
+              <p>{t('Precios:')}</p>
+              <p>{t('Dui: XXX€')}</p>
+              <p>{t('Doble: XXX€')}</p>
+              <p>{t('El acuerdo incluye:')}</p>
+              <p>{t('Habitación Cosy Urban. (tasa turística no incluida)')}</p>
+              <p>{t('Reservas deben enviar un correo e indicar la referencia IAD-CN22')}</p>
+            </div>
             <a 
                 className="email__btn"
                 href="#mailgo"

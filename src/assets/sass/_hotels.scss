@@ -29,6 +29,7 @@
 .extend-container {
   margin: 0 3rem;
   padding-bottom: 1rem;
+  overflow: hidden;
 }
 .hotels-grid {
   display: grid;
@@ -39,7 +40,21 @@
   grid-row-gap: 0px;
   max-height: 932px;
   margin-bottom: 5rem;
-
+  min-width: 1780px;
+  .hotels-grid__item {
+    padding: 0 1rem;
+    &:not(:last-child) {
+      border-right: 2px solid $color-blue-dark;
+    }
+  }
+  .hotels-grid__item-address {
+    height: 200px;
+    position: relative;
+    .map__btn {
+      position: absolute;
+      bottom: 0;
+    }
+  }
   ul {
     padding: 0;
   }
