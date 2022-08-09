@@ -175,8 +175,15 @@ h1 {
 }
 
 #mainNav {
+  top: -20px;
   .container {
     padding: 0;
+    .navbar-toggler {
+      
+    }
+    .navbar-nav {
+      margin-top: 20px;
+    }
   }
 }
 
