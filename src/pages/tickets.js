@@ -20,7 +20,7 @@ const RegistrationPage = () => {
               className="btn btn--ticket"
               referrerpolicy="no-referrer"
               target="_blank">
-              {t('Reservar')}
+              {t('Comprar')}
             </a>
           </div>
         </div>

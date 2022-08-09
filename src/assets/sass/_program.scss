@@ -1,3 +1,9 @@
+.program-page {
+  .orange-title {
+    width: 100;
+  }
+}
+
 @mixin alternate-color {
   background-color: $color-blue-dark;
   color: white;
@@ -55,6 +61,7 @@
 }
 
 .program_blocks--grid {
+  justify-content: space-around;
   @include program-block-items;
 
   .program_blocks__item:last-child {

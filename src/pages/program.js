@@ -7,10 +7,10 @@ const ProgramPage = () => {
   const {t} = useTranslation();
   return (
     <Layout activeLink="program">
-      <section className="page-section">
+      <section className="page-section program-page">
         <div className="container">
           <div class="row">
-            <h2>
+            <h2 className="orange-title text-center">
               {t('7 de Octubre 2022')}
             </h2>
           </div>
@@ -21,7 +21,7 @@ const ProgramPage = () => {
             </div>
             <div className="col-6 col-md-2 program_blocks__item">
               <span className="program_blocks__item__time">{t('17:30h')}</span>
-              <span className="program_blocks__item__description">{t('Aperitivo')}</span>
+              <span className="program_blocks__item__description">{t('Inicio convencion nacional')}</span>
             </div>
             <div className="col-6 col-md-2 program_blocks__item">
               <span className="program_blocks__item__time">{t('20:00h')}</span>
