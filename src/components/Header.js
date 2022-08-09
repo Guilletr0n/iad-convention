@@ -17,21 +17,22 @@ class Header extends Component {
     const { activeLink } = this.props;
     const { t } = this.props;
     return (
-      <div className="container">
+      <div className="container header-container">
         <div className="row mt-3">
-          <div className="col-md-4">
+          <div className="col-12 col-md-4">
             <StaticImage 
+              imgClassName="site-logo"
+              className="site-logo-wrap"
               src="../assets/images/logo-horizontal.png"
               alt="logo"
-              width={400}
               height={70}
               placeholder="none"
             />
           </div>
 
-          <div className="col-md-8">
+          <div className="col-12 col-md-8 main-nav-container">
             <nav className="navbar navbar-expand-lg navbar-dark" id="mainNav">
-              <div className="container justify-content-center">
+              <div className="container">
                 <a
                   className="navbar-brand text-expanded font-weight-bold d-lg-none"
                   href="/#"
@@ -111,7 +112,7 @@ class Header extends Component {
                       </Link>
                     </li>
                   </ul>
-                  <div className="navbar-dday">
+                <div className="navbar-dday">
                     <span className="navbar-dday__day">7</span>
                     <span className="navbar-dday__month">OCT</span>
                     <span className="navbar-dday__year">2022</span>

@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'IAD Convención 2022', // <title>
+  siteTitle: 'iad España - CN2022', // <title>
   manifestName: 'Casual',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',

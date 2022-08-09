@@ -154,10 +154,6 @@ p {
   }
 }
 
-.legal-page {
-  
-}
-
 .container {
   padding: 2rem;
 }
@@ -174,10 +170,38 @@ h1 {
   }
 }
 
+.header-container {
+  padding:0;
+}
+
 #mainNav {
   .container {
     padding: 0;
   }
+}
+
+.site-logo-wrap {
+  z-index: 1;
+  width: 260px;
+  .site-logo {
+    width: 100%;
+  }
+}
+.main-nav-container {
+  top: -30px;
+}
+
+@media only screen and (min-width:$b-md) {
+  .site-logo-wrap {
+    width: 350px;
+    .site-logo {
+      width: 100%;
+    }
+  }
+  .main-nav-container {
+    top: unset;
+  }
+
 }
 
 .page-tickets {
