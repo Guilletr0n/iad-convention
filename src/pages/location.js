@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { StaticImage } from "gatsby-plugin-image";
+import { heroAnim } from '../assets/images/location-anim.png';
 
 const ProgramPage = () => {
   const {t} = useTranslation();
@@ -10,17 +11,17 @@ const ProgramPage = () => {
   <Layout activeLink="location">
     <section className="page-section">
       <div className="hero-container">
-        
-          <div className="hero">
-            <StaticImage 
-              src="../assets/images/location-hero.jpg"
-              alt="location hero"
-              width={1920}
-              height={500}
-              placeholder="blurred"
-              objectFit="cover"
-            />
-          </div>
+        <div className="hero">
+          <StaticImage 
+            src="../assets/images/location-hero.jpg"
+            alt="location hero"
+            width={1920}
+            height={500}
+            placeholder="blurred"
+            objectFit="cover"
+            animated="true"
+          />
+        </div>
       </div>
       
     </section>

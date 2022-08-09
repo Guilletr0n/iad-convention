@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { StaticImage } from "gatsby-plugin-image";
+import { heroAnim } from '../assets/images/hotels-anim.png';
 
 const ProgramPage = () => {
   const {t} = useTranslation();
@@ -12,12 +13,11 @@ const ProgramPage = () => {
     <div className="hero-container">
         <div className="hero">
           <StaticImage 
-            src="../assets/images/hotels-anim.png"
+            src="../assets/images/hotels-hero.jpg"
             alt="hotels"
             width={1920}
             height={500}
           />
-          
         </div>
       </div>
       

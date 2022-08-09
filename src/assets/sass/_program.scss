@@ -11,12 +11,13 @@
 
 @mixin program-block-items {
   .program_blocks__item {
+    color: $color-blue-dark;
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 140px;
     padding: 1rem;
-    justify-content: space-evenly
+    justify-content: space-evenly;
   }
   
   .program_blocks__item__time {
@@ -74,7 +75,7 @@
   @media only screen and (min-width: $b-md) {
     .program_blocks__item:nth-child(4) {
       background-color: transparent;
-      color: black;
+      color: $color-blue-dark;
     }
     .program_blocks__item:nth-child(odd) {
       @include alternate-color;

@@ -30,10 +30,10 @@ class Header extends Component {
           </div>
 
           <div className="col-md-8">
-            <nav className="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <nav className="navbar navbar-expand-lg navbar-dark" id="mainNav">
               <div className="container">
                 <a
-                  className="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
+                  className="navbar-brand text-expanded font-weight-bold d-lg-none"
                   href="/#"
                 >
                 </a>
@@ -58,8 +58,8 @@ class Header extends Component {
                         activeLink === 'home' ? 'active' : ''
                       }`}
                     >
-                      <Link className="nav-link text-uppercase text-expanded" to="/">
-                      {t('Convención Nacional’22')}
+                      <Link className="nav-link text-expanded" to="/">
+                        {t('Convención Nacional’22')}
                       </Link>
                     </li>
                     <li
@@ -68,7 +68,7 @@ class Header extends Component {
                       }`}
                     >
                       <Link
-                        className="nav-link text-uppercase text-expanded"
+                        className="nav-link text-expanded"
                         to="/program"
                       >
                         {t('Program')}
@@ -80,7 +80,7 @@ class Header extends Component {
                       }`}
                     >
                       <Link
-                        className="nav-link text-uppercase text-expanded"
+                        className="nav-link text-expanded"
                         to="/location"
                       >
                         {t('Location')}
@@ -92,7 +92,7 @@ class Header extends Component {
                       }`}
                     >
                       <Link
-                        className="nav-link text-uppercase text-expanded"
+                        className="nav-link text-expanded"
                         to="/hotels"
                       >
                         {t('Hotels')}
@@ -104,7 +104,7 @@ class Header extends Component {
                       }`}
                     >
                       <Link
-                        className="nav-link text-uppercase text-expanded"
+                        className="nav-link text-expanded"
                         to="/tickets"
                       >
                         {t('Entradas')}

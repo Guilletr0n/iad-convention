@@ -176,3 +176,21 @@ h1 {
     font-size: $font-L;
   }
 }
+
+#mainNav {
+  .container {
+    padding: 0;
+  }
+}
+
+.page-tickets {
+  .hero__text {
+    width: 100%;
+    h1{
+      @include avenir-font;
+      color: $color-orange;
+      font-size: $font-L;
+    }
+
+  }
+}

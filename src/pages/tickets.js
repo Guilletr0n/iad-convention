@@ -7,7 +7,7 @@ const RegistrationPage = () => {
   const {t} = useTranslation();
   return (
   <Layout activeLink="tickets">
-    <section className="page-section">
+    <section className="page-section page-tickets">
       <div className="container">
         <div className="row">
           <div class="hero__text">
