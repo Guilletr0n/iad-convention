@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { StaticImage } from "gatsby-plugin-image";
-import { heroAnim } from '../assets/images/hotels-anim.png';
+import HeroAnim from '../assets/images/hotels-anim.png';
 
 const ProgramPage = () => {
   const {t} = useTranslation();
@@ -12,12 +12,7 @@ const ProgramPage = () => {
     <section className="page-section">
     <div className="hero-container">
         <div className="hero">
-          <StaticImage 
-            src="../assets/images/hotels-hero.jpg"
-            alt="hotels"
-            width={1920}
-            height={500}
-          />
+          <img alt="Barcelona Landscape" className="hero-anim" src={HeroAnim}/>
         </div>
       </div>
       
@@ -28,6 +23,7 @@ const ProgramPage = () => {
         <div className="row hotels-list-row">
           <div className="col-12 col-md-2">
             <StaticImage 
+              className="hotel-logo"
               src="../assets/images/w-hotel-logo.png"
               alt="Hotel W"
               with="186"
@@ -62,6 +58,7 @@ const ProgramPage = () => {
         <div className="row hotels-list-row">
           <div className="col-12 col-md-2">
           <StaticImage 
+              className="hotel-logo"
               src="../assets/images/h10-hotel-logo.png"
               alt="Hotel W"
               with="186"
@@ -95,6 +92,7 @@ const ProgramPage = () => {
         <div className="row hotels-list-row">
           <div className="col-12 col-md-2">
           <StaticImage 
+              className="hotel-logo"
               src="../assets/images/exe-hotels-logo.png"
               alt="Hotel W"
               with="186"
@@ -127,6 +125,7 @@ const ProgramPage = () => {
         <div className="row hotels-list-row">
           <div className="col-12 col-md-2">
           <StaticImage 
+              className="hotel-logo"
               src="../assets/images/exe-hotels-logo.png"
               alt="Hotel W"
               with="186"
@@ -160,6 +159,7 @@ const ProgramPage = () => {
         <div className="row hotels-list-row mb-5">
           <div className="col-12 col-md-2">
             <StaticImage 
+              className="hotel-logo"
               src="../assets/images/kk-hotels-logo.png"
               alt="Hotel W"
               with="186"

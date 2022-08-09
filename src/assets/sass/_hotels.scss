@@ -79,12 +79,22 @@
   }
 }
 
+
+
 .page-section {
   .hotels-container {
     padding: 1rem;
     .hotels-list-row {
       border-bottom: 2px solid $color-blue-light;
       padding: 2rem 0;
+      .hotel-logo {
+        width: 93px;
+      }
+      @media only screen and (min-width: $b-md) {
+        .hotel-logo {
+          border: none;
+        }
+      }
       .hotels--title {
         color: $color-orange;
       }
@@ -95,5 +105,12 @@
         text-indent: 54px;
       }
     }
+  }
+}
+
+.hero-container {
+  .hero-anim {
+    width: 100vw;
+    height: auto;
   }
 }
