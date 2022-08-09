@@ -31,7 +31,7 @@ class Header extends Component {
 
           <div className="col-md-8">
             <nav className="navbar navbar-expand-lg navbar-dark" id="mainNav">
-              <div className="container">
+              <div className="container justify-content-center">
                 <a
                   className="navbar-brand text-expanded font-weight-bold d-lg-none"
                   href="/#"
@@ -111,6 +111,11 @@ class Header extends Component {
                       </Link>
                     </li>
                   </ul>
+                  <div className="navbar-dday">
+                    <span className="navbar-dday__day">7</span>
+                    <span className="navbar-dday__month">OCT</span>
+                    <span className="navbar-dday__year">2022</span>
+                  </div>
                 </div>
               </div>
             </nav>

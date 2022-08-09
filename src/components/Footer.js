@@ -41,10 +41,6 @@ const Footer = () => {
                   className=""
                   to="/aviso-legal"
                 ></Link>
-                <Link
-                  className=""
-                  to="/politica-cookies"
-                >{t('Política de Cookies')}</Link>
             </p>
           </div>
         </div>

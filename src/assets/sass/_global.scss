@@ -50,9 +50,6 @@ p {
   background-color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
-  .container {
-    padding: 5rem 0;
-  }
 }
 
 .slider-container {
@@ -130,7 +127,7 @@ p {
 
 .hero__text {
   @include avenir-font;
-  padding: $font-XXXL;
+  padding: $font-XXL;
   font-size: $font-XL;
 }
 
@@ -192,5 +189,32 @@ h1 {
       font-size: $font-L;
     }
 
+  }
+}
+
+.navbar-dday {
+  font-family: 'Nunito';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background-color: $color-blue-dark;
+  color: white;
+  font-weight: 800;
+  &__day {
+    font-size: $font-XL;
+    line-height: 16px;
+    font-weight: 800;
+  }
+  &__month {
+    font-size: $font-L;
+    line-height: 24px;
+    font-weight: 800;
+  }
+  &__year {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 800;
   }
 }

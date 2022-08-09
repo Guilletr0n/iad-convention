@@ -42,10 +42,20 @@ const ProgramPage = () => {
             <p>{t('Precio: 15% de descuento sobre tarifa web')}</p>
             <p>{t('Incluye desayuno')}</p>
             <p>{t('Tasa turística no incluida')}</p>
-            <p>{t('Para realizar reserva, es necesario acceder a la web del hotel, y para las noches del 6 y 7 de Octubre se ha habilitado un código de descuento: 2GS que hay que escribir en el apartado: Ver Tarifas / Tarifas especiales / Corporativo-Promoción-nºSET')}</p>
+            <p>
+              {t('Para realizar reserva, es necesario acceder a la web del hotel, y para las noches del 6 y 7 de Octubre se ha habilitado un ')}
+              <strong>{t('código de descuento: 2GS ')}</strong>
+              {t('que hay que escribir en el apartado: Ver Tarifas / Tarifas especiales / Corporativo-Promoción-nºSET')}
+            </p>
           </div>
           <div className="col-12 col-md-3">
             <a className="map__btn" target="_blank" href="https://g.page/w-barcelona-hotel?share">Cómo llegar</a>
+            <a className="email__btn"
+              href="https://www.espanol.marriott.com/hotels/travel/bcnwh-w-barcelona/?scid=d5e1b25e-2049-49ae-9bd5-2a7bdde45b71&gclid=EAIaIQobChMIltzQ79eW-QIVB-7tCh3_HwPjEAAYASAAEgKTwvD_BwE&gclsrc=aw.ds"
+              referrerPolicy="no-referer"
+              target="_blank"
+              >{t('Reservar')}
+            </a>
           </div>
         </div>
 
@@ -68,7 +78,7 @@ const ProgramPage = () => {
               <p>{t('Incluye habitación superior, desayuno y acceso a spa')}</p>
               <p>{t('El acuerdo incluye')}</p>
               <p>{t('Tasa turística no incluida')}</p>
-              <p>{t('Para realizar reserva, es necesario escribir un email a h10.marina.barcelona@h10hotels.com e indicar que se trata de una reserva del acuerdo corporate iad.')}</p>
+              <p>{t('Para realizar reserva, es necesario escribir un email a h10.marina.barcelona@h10hotels.com e indicar que se trata de una reserva del ')}<strong>{t('acuerdo corporate iad')}</strong></p>
           </div>
           <div className="col-12 col-md-3">
             <a className="map__btn" target="_blank" href="https://g.page/h10-marina-barcelona?share">Cómo llegar</a>
@@ -97,10 +107,10 @@ const ProgramPage = () => {
             <p>{t('Teléfono: 933 93 09 70')}</p>
             <p>{t('Distancia hasta el evento: 3,8 kms')}</p>
             <p>{t('Precio: DUI: 153€ (IVA incluido) por habitación y noche')}</p>
-            <p>{t('DOB: 162€ (IVA incluido) por habitación y noche')}</p>
+            <p className="hotels-list__indented-price">{t('DOB: 162€ (IVA incluido) por habitación y noche')}</p>
             <p>{t('Incluye desayuno')}</p>
             <p>{t('Tasa turística no incluida')}</p>
-            <p>{t('Para realizar reserva, es necesario escribir un email a reservas@execristalpalace.com e indicar que se trata de una reserva en referencia a la CONVENCIÓN NACIONAL IAD')}</p>
+            <p>{t('Para realizar reserva, es necesario escribir un email a reservas@execristalpalace.com e indicar que se trata de una reserva en referencia a la')}<strong>{t(' CONVENCIÓN NACIONAL IAD')}</strong></p>
           </div>
           <div className="col-12 col-md-3">
             <a className="map__btn" target="_blank" href="https://g.page/hotel-exe-cristal-palace?share">Cómo llegar</a>
@@ -129,10 +139,10 @@ const ProgramPage = () => {
             <p>{t('Teléfono: 932 40 84 19')}</p>
             <p>{t('Distancia hasta el evento: 3,5 kms')}</p>
             <p>{t('Precio: DUI: 177€ (IVA incluido) por habitación y noche')}</p>
-            <p>{t('DOB: 185€ (IVA incluido) por habitación y noche')}</p>
+            <p className="hotels-list__indented-price">{t('DOB: 185€ (IVA incluido) por habitación y noche')}</p>
             <p>{t('Incluye desayuno')}</p>
             <p>{t('Tasa turística no incluida')}</p>
-            <p>{t('Para realizar reserva, es necesario escribir un email a info@exeplazacatalunya.com e indicar que se trata de una reserva en referencia a la CONVENCIÓN NACIONAL IAD')}</p>
+            <p>{t('Para realizar reserva, es necesario escribir un email a info@exeplazacatalunya.com e indicar que se trata de una reserva en referencia a la')}<strong>{t(' CONVENCIÓN NACIONAL IAD')}</strong></p>
           </div>
           <div className="col-12 col-md-3">
             <a className="map__btn" target="_blank" href="https://g.page/hotel-exe-plaza-catalunya?share">Cómo llegar</a>
@@ -164,7 +174,8 @@ const ProgramPage = () => {
             <p>{t('Precio: 197,64€ (IVA incluido) por habitación y noche (del 7 al 9 de octubre)')}</p>
             <p>{t('Incluye habitación Cosy Urban')}</p>
             <p>{t('Tasa turística no incluida')}</p>
-            <p>{t('Para realizar reserva, es necesario escribir un email a reservations.picasso@kkhotels.com e indicar la referencia IAD-CN22')}</p>
+            <p>{t('Para realizar reserva, es necesario escribir un email a reservations.picasso@kkhotels.com e indicar la referencia ')}<strong>{t('IAD-CN22')}</strong></p>
+            
           </div>
         
           <div className="col-12 col-md-3">

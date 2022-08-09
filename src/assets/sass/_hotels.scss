@@ -85,6 +85,15 @@
     .hotels-list-row {
       border-bottom: 2px solid $color-blue-light;
       padding: 2rem 0;
+      .hotels--title {
+        color: $color-orange;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      .hotels-list__indented-price {
+        text-indent: 54px;
+      }
     }
   }
 }
