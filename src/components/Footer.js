@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import { StaticImage } from "gatsby-plugin-image";
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 
