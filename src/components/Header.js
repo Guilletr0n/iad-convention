@@ -59,7 +59,7 @@ class Header extends Component {
                       }`}
                     >
                       <Link className="nav-link text-uppercase text-expanded" to="/">
-                      {t('Home')}
+                      {t('Convención Nacional’22')}
                       </Link>
                     </li>
                     <li
@@ -107,7 +107,7 @@ class Header extends Component {
                         className="nav-link text-uppercase text-expanded"
                         to="/tickets"
                       >
-                        {t('Tickets')}
+                        {t('Entradas')}
                       </Link>
                     </li>
                   </ul>

@@ -78,3 +78,13 @@
     bottom: 0;
   }
 }
+
+.page-section {
+  .hotels-container {
+    padding: 1rem;
+    .hotels-list-row {
+      border-bottom: 2px solid $color-blue-light;
+      padding: 2rem 0;
+    }
+  }
+}

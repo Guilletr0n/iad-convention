@@ -1,8 +1,16 @@
 .footer {
-  background-color: fade-out($color-blue-dark, 0.1);
+  background-color: $color-blue-dark;
   width: 100vw;
   @include avenir-font;
   color: white;
+
+  .footer__text {
+    @include avenir-font;
+    padding: $font-XL;
+    font-size: $font-L;
+    color: white;
+    margin: 0;
+  }
 
   a {
     color: white;

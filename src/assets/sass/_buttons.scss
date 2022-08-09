@@ -43,27 +43,20 @@
   }
 }
 
-.map__btn {
-  background-image: url('../icons/icon-map.svg');
-  background-size: 1.5rem;
-  &:hover { 
-    filter: contrast(150%);
-    color: white;
-  }
- }
 .map__btn,
 .email__btn {
   background-color: $color-blue-dark;
   color: white;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 8px;
   text-decoration: none;
-  padding: 1rem 2rem 1rem 3rem;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
   margin: 1rem;
   display: inline-block;
+  font-size: $font-S;
   text-transform: uppercase;
   background-repeat: no-repeat;
-  background-position: 0.8rem center;
+  background-position: 0.4rem center;
   overflow: hidden;
   transition: transform 0.1s linear;
   &:hover {
@@ -76,3 +69,12 @@
   background-image: url('../icons/icon-email.svg');
   background-size: 1.5rem;
 }
+
+.map__btn {
+  background-image: url('../icons/icon-map.svg');
+  background-size: 1rem;
+  &:hover { 
+    filter: contrast(150%);
+    color: white;
+  }
+ }

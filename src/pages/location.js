@@ -10,7 +10,7 @@ const ProgramPage = () => {
   <Layout activeLink="location">
     <section className="page-section">
       <div className="hero-container">
-        <h2 className="hero__title">{t('Localización')}</h2>
+        
           <div className="hero">
             <StaticImage 
               src="../assets/images/location-hero.jpg"
