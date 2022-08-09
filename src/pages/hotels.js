@@ -35,7 +35,8 @@ const ProgramPage = () => {
             <p>Dirección: Plaça Rosa Del Vents 1, Final, Pg. de Joan de Borbó, 08039 Barcelona</p>
             <p>{t('Teléfono: 932 95 28 00')}</p>
             <p>{t('Distancia hasta el evento: 0 Kms')}</p>
-            <p>{t('Precio: 15% de descuento sobre tarifa web')}</p>
+            <p>{t('Precio:')}</p>
+            <p>{t('15% de descuento sobre tarifa web')}</p>
             <p>{t('Incluye desayuno')}</p>
             <p>{t('Tasa turística no incluida')}</p>
             <p>
@@ -70,7 +71,7 @@ const ProgramPage = () => {
             <p>{t('Dirección: Olympic Village, Av. del Bogatell, 64, 68, 08005 Barcelona')}</p>
             <p>{t('Teléfono: 933 09 79 17')}</p>
             <p>{t('Distancia hasta el evento: 3,2 kms')}</p>
-            <p>{t('Precios:')}</p>
+            <p>{t('Precio:')}</p>
               <p>{t('135€ (IVA incluido) por habitación y noche')}</p>
               <p>{t('Incluye habitación superior, desayuno y acceso a spa')}</p>
               <p>{t('El acuerdo incluye')}</p>
@@ -104,8 +105,9 @@ const ProgramPage = () => {
             <p>{t('Dirección: Carrer de la Diputació, 257, 08007 Barcelona')}</p>
             <p>{t('Teléfono: 933 93 09 70')}</p>
             <p>{t('Distancia hasta el evento: 3,8 kms')}</p>
-            <p>{t('Precio: DUI: 153€ (IVA incluido) por habitación y noche')}</p>
-            <p className="hotels-list__indented-price">{t('DOB: 162€ (IVA incluido) por habitación y noche')}</p>
+            <p>{t('Precio:')}</p>
+            <p>{t('DUI: 153€ (IVA incluido) por habitación y noche')}</p>
+            <p>{t('DOB: 162€ (IVA incluido) por habitación y noche')}</p>
             <p>{t('Incluye desayuno')}</p>
             <p>{t('Tasa turística no incluida')}</p>
             <p>{t('Para realizar reserva, es necesario escribir un email a reservas@execristalpalace.com e indicar que se trata de una reserva en referencia a la')}<strong>{t(' CONVENCIÓN NACIONAL IAD')}</strong></p>
@@ -137,8 +139,9 @@ const ProgramPage = () => {
             <p>{t('Dirección: Ronda de la Universitat, 18, 08007 Barcelona')}</p>
             <p>{t('Teléfono: 932 40 84 19')}</p>
             <p>{t('Distancia hasta el evento: 3,5 kms')}</p>
-            <p>{t('Precio: DUI: 177€ (IVA incluido) por habitación y noche')}</p>
-            <p className="hotels-list__indented-price">{t('DOB: 185€ (IVA incluido) por habitación y noche')}</p>
+            <p>{t('Precio:')}</p>
+            <p>{t('DUI: 177€ (IVA incluido) por habitación y noche')}</p>
+            <p>{t('DOB: 185€ (IVA incluido) por habitación y noche')}</p>
             <p>{t('Incluye desayuno')}</p>
             <p>{t('Tasa turística no incluida')}</p>
             <p>{t('Para realizar reserva, es necesario escribir un email a info@exeplazacatalunya.com e indicar que se trata de una reserva en referencia a la')}<strong>{t(' CONVENCIÓN NACIONAL IAD')}</strong></p>
@@ -171,7 +174,8 @@ const ProgramPage = () => {
             <p>{t('Dirección: Passeig de Picasso, 26, 30, 08003 Barcelona')}</p>
             <p>{t('Teléfono: 935 47 86 00')}</p>
             <p>{t('Distancia hasta el evento: 2,4 kms')}</p>
-            <p>{t('Precio: 197,64€ (IVA incluido) por habitación y noche (del 7 al 9 de octubre)')}</p>
+            <p>{t('Precio:')}</p>
+            <p>{t('197,64€ (IVA incluido) por habitación y noche (del 7 al 9 de octubre)')}</p>
             <p>{t('Incluye habitación Cosy Urban')}</p>
             <p>{t('Tasa turística no incluida')}</p>
             <p>{t('Para realizar reserva, es necesario escribir un email a reservations.picasso@kkhotels.com e indicar la referencia ')}<strong>{t('IAD-CN22')}</strong></p>

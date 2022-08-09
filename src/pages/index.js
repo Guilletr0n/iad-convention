@@ -11,7 +11,7 @@ const IndexPage = () => {
   return (
   <Layout activeLink="home">
     <section className="page-section clearfix home-video-section">
-      <video className="hero-video" width="100%" height="auto" preload="auto" autoPlay muted loop playsinline >
+      <video className="hero-video" width="100%" height="auto" preload="auto" autoPlay muted loop playsInline >
         <source src={Hero} type="video/mp4"/>
         {t('Su navegador no puede reproducir el video')}
       </video>

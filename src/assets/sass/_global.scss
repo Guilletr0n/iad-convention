@@ -101,6 +101,7 @@ p {
     background-color: #FFFFFF;
     .hero-video {
       width: 100%;
+      //object-fit: contain;
     }
   }
 }
@@ -247,5 +248,15 @@ h1 {
     font-size: 18px;
     line-height: 20px;
     font-weight: 800;
+  }
+}
+
+.legal-page {
+  h3 {
+    margin-top: 1rem;
+    font-weight: bolder;
+  }
+  ul {
+    list-style: lower-roman;
   }
 }
