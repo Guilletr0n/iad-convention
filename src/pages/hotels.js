@@ -43,10 +43,10 @@ const ProgramPage = () => {
               {t('Realización de la reserva a través de la web del hotel introduciendo el ')}
               <strong>{t('código de descuento: 2GS ')}</strong>
               {t('en el momento de realizar la reserva. Código promocional válido las noches de 6 y 7 de Octubre.')}
-              {t('¿Cómo reservar utilizando el código descuento?')}
+              <p className="pt-2">{t('¿Cómo reservar utilizando el código descuento?')}</p>
               {t('Acceder a la web del ')}
               <a referrerPolicy='no-referrer' href="https://www.espanol.marriott.com/hotels/travel/bcnwh-w-barcelona/?scid=d5e1b25e-2049-49ae-9bd5-2a7bdde45b71&gclid=EAIaIQobChMIltzQ79eW-QIVB-7tCh3_HwPjEAAYASAAEgKTwvD_BwE&gclsrc=aw.ds">W Barcelona</a>
-              {t('Barcelona, clicar sobre “ver tarifas” situado en la parte superior derecha de la home. Finalmente, cuando aparece la ventana emergente para hacer la reserva, desplegar el apartado “tarifas especiales” y seleccionar la opción “Corporativo/Promoción/Nº SET”')}
+              {t(', clicar sobre “ver tarifas” situado en la parte superior derecha de la home. Finalmente, cuando aparece la ventana emergente para hacer la reserva, desplegar el apartado “tarifas especiales” y seleccionar la opción “Corporativo/Promoción/Nº SET”')}
             </p>
           </div>
           <div className="col-12 col-md-3">

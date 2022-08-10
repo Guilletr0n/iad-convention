@@ -18,8 +18,8 @@ class Header extends Component {
     const { t } = this.props;
     return (
       <div className="container header-container">
-        <div className="row mt-3">
-          <div className="col-12 col-md-2">
+        <div className="row">
+          <div className="col-12 col-md-2 pt-3">
             <StaticImage 
               imgClassName="site-logo"
               className="site-logo-wrap"
@@ -29,7 +29,7 @@ class Header extends Component {
             />
           </div>
 
-          <div className="col-12 col-md-9 main-nav-container">
+          <div className="col-12 col-md-9 pt-3 main-nav-container ">
             <nav className="navbar navbar-expand-lg navbar-dark" id="mainNav">
               <div className="container">
                 <button
