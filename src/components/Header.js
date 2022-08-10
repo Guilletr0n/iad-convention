@@ -19,7 +19,7 @@ class Header extends Component {
     return (
       <div className="container header-container">
         <div className="row mt-3">
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-md-2">
             <StaticImage 
               imgClassName="site-logo"
               className="site-logo-wrap"
@@ -32,12 +32,6 @@ class Header extends Component {
           <div className="col-12 col-md-9 main-nav-container">
             <nav className="navbar navbar-expand-lg navbar-dark" id="mainNav">
               <div className="container">
-                <a
-                  className="navbar-brand text-expanded font-weight-bold d-lg-none"
-                  href="/#"
-                >
-                </a>
-
                 <button
                   onClick={_ => this.toggleMenu(!openMenu)}
                   className={`navbar-toggler  ${openMenu ? '' : 'collapsed'}`}
@@ -111,14 +105,16 @@ class Header extends Component {
                       </Link>
                     </li>
                   </ul>
-                <div className="navbar-dday">
-                    <span className="navbar-dday__day">7</span>
-                    <span className="navbar-dday__month">OCT</span>
-                    <span className="navbar-dday__year">2022</span>
-                  </div>
                 </div>
               </div>
             </nav>
+          </div>
+          <div className="col-12 col-md-1">
+            <div className="navbar-dday">
+              <span className="navbar-dday__day">7</span>
+              <span className="navbar-dday__month">OCT</span>
+              <span className="navbar-dday__year">2022</span>
+            </div>
           </div>
         </div>
       </div>

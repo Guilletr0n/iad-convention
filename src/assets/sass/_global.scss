@@ -179,7 +179,10 @@ h1 {
 }
 
 .header-container {
-  padding: 10px;
+  padding: 0;
+  &:first-child {
+    padding-left: 10px;
+  }
 }
 
 @media only screen and (min-width:$b-md) {
@@ -206,31 +209,22 @@ h1 {
 .site-logo-wrap {
   z-index: 1;
   width: 260px;
+  left: 10px;
   .site-logo {
     width: 100%;
   }
 }
 .main-nav-container {
+  display: flex;
+  justify-content: flex-end;
   top: -30px;
+  .container {
+    justify-content: flex-end;
+    width: 93vw;
+  }
 }
 
-@media only screen and (min-width:$b-md) {
-  .site-logo-wrap {
-    width: 292px;
-    .site-logo {
-      width: 100%;
-    }
-  }
-  .main-nav-container {
-    top: unset;
-  }
-  .navbar-dday {
-    height: 96px;
-    position: absolute;
-    right: -40px;
-    top: 0;
-  }
-}
+
 
 .page-tickets {
   .hero__text {
@@ -240,7 +234,6 @@ h1 {
       color: $color-orange;
       font-size: $font-L;
     }
-
   }
 }
 
@@ -254,6 +247,7 @@ h1 {
   background-color: $color-blue-dark;
   color: white;
   font-weight: 800;
+  width: 100vw;
   &__day {
     font-size: $font-XL;
     line-height: 16px;
@@ -268,6 +262,28 @@ h1 {
     font-size: 18px;
     line-height: 20px;
     font-weight: 800;
+  }
+}
+
+@media only screen and (min-width:$b-md) {
+  .site-logo-wrap {
+    width: 240px;
+    left: 0;
+    .site-logo {
+      width: 100%;
+    }
+  }
+
+  .main-nav-container {
+    justify-content: center;
+    top: unset;
+  }
+
+  .navbar-dday {
+    height: 96px;
+    top: -10px;
+    width: 100px;
+    border:2px solid red;
   }
 }
 
