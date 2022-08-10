@@ -19,18 +19,17 @@ class Header extends Component {
     return (
       <div className="container header-container">
         <div className="row mt-3">
-          <div className="col-12 col-md-4">
+          <div className="col-12 col-md-3">
             <StaticImage 
               imgClassName="site-logo"
               className="site-logo-wrap"
-              src="../assets/images/logo-horizontal.png"
-              alt="logo"
-              height={70}
+              src="../assets/images/logo-header.png"
               placeholder="none"
+              alt="iad logo"
             />
           </div>
 
-          <div className="col-12 col-md-8 main-nav-container">
+          <div className="col-12 col-md-9 main-nav-container">
             <nav className="navbar navbar-expand-lg navbar-dark" id="mainNav">
               <div className="container">
                 <a

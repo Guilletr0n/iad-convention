@@ -7,7 +7,7 @@ const Footer = () => {
 
   const {t} = useTranslation();
   return (
-    <footer className="footer text-faded py-5">
+    <footer className="footer text-faded">
       <div className="container">
         
         <div className="row">
@@ -26,12 +26,12 @@ const Footer = () => {
               <strong>{t('Convención Nacional de 2022')}</strong>
               {t(' es uno de los eventos más importantes de la red iad. Un momento de reencuentro y de celebración de los éxitos cosechados. Este año se celebrará en el')}
               <strong>{t(' Hotel W')}</strong>
-              {t(' de Barcelona y es exclusivamente para los miembros del Grupo')}
+              {t(' e Barcelona y será una cita exclusiva para los miembros del Grupo iad')}
               <strong>{t(' iad')}</strong>
             </p>
           </div>
         </div>
-        <div className="row text-center">  
+        <div className="row text-center mt-5">  
           <div className="col-12">
             <p className="m-0">
               <a href="/legal" alt="aviso legal">

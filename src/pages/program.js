@@ -21,7 +21,7 @@ const ProgramPage = () => {
             </div>
             <div className="col-6 col-md-2 program_blocks__item">
               <span className="program_blocks__item__time">{t('17:30h')}</span>
-              <span className="program_blocks__item__description">{t('Inicio convencion nacional')}</span>
+              <span className="program_blocks__item__description">{t('Inicio de la Convención Nacional')}</span>
             </div>
             <div className="col-6 col-md-2 program_blocks__item">
               <span className="program_blocks__item__time">{t('20:00h')}</span>

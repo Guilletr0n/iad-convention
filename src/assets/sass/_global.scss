@@ -99,20 +99,27 @@ p {
   width: 100%;
   .container {
     background-color: #FFFFFF;
-    .hero-video {
-      width: 100%;
-      //object-fit: contain;
-    }
+    
   }
 }
 
-@media (max-width: 990px) {
+.video-wrap {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero-video {
+  width: 100%;
+  object-fit: contain;
+}
+@media (max-width: $b-md) {
   .hero-video {
     width: auto;
     height: 100%;
     transform: translateX(-30%);
   }
 }
+
 .hero__title {
   position: absolute;
   width: 100%;
@@ -172,7 +179,14 @@ h1 {
 }
 
 .header-container {
-  padding:0;
+  padding: 10px;
+}
+
+@media only screen and (min-width:$b-md) {
+  .header-container {
+    padding: 0;
+  }
+  
 }
 
 #mainNav {
@@ -184,6 +198,7 @@ h1 {
     }
     .navbar-nav {
       margin-top: 20px;
+      position: relative;
     }
   }
 }
@@ -201,7 +216,7 @@ h1 {
 
 @media only screen and (min-width:$b-md) {
   .site-logo-wrap {
-    width: 350px;
+    width: 292px;
     .site-logo {
       width: 100%;
     }
@@ -209,7 +224,12 @@ h1 {
   .main-nav-container {
     top: unset;
   }
-
+  .navbar-dday {
+    height: 96px;
+    position: absolute;
+    right: -40px;
+    top: 0;
+  }
 }
 
 .page-tickets {

@@ -11,7 +11,7 @@ const RegistrationPage = () => {
       <div className="container">
         <div className="row">
           <div class="hero__text">
-            <h1 className="text-center">{t('Accede a Weezevent desde aquí para comprar tu entrada')}</h1>
+            <h1 className="text-center">{t('Comprar entradas para la Convención Nacional 2022 de iad España')}</h1>
           </div>
         </div>
         <div className="row">
