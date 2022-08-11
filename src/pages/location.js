@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { StaticImage } from "gatsby-plugin-image";
+import HeroAnim  from '../assets/images/location-anim.png';
 
 const ProgramPage = () => {
   const {t} = useTranslation();
@@ -11,21 +12,33 @@ const ProgramPage = () => {
     <section className="page-section">
       <div className="hero-container">
         <div className="hero">
-          <StaticImage 
-            src="../assets/images/location-hero.jpg"
-            alt="location hero"
-            width={1920}
-            height={500}
-          />
-          <h2 className="hero__title">{t('Localización')}</h2>
+        <img alt="Barcelona Landscape" className="hero-anim" src={HeroAnim}/>
         </div>
       </div>
       
     </section>
 
-    <section className="page-section">
+    <section className="page-section location-page">
       <div className="container">
-        
+        <div className="row">
+          <div className="col-12 col-md-5">
+            <p className="orange-title">Plaça Rosa Del Vents 1, Final, Pg. de Joan de Borbó, 08039 Barcelona</p>
+            <p className="body__text">
+              {t('La Convención Nacional de iad España tendrá lugar en el prestigioso y emblemático Hotel W de Barcelona. Ubicado a primera línea de playa, justo al lado del paseo marítimo, esta joya diseñada por el arquitecto postmodernista Ricardo Bofill es toda una seña de identidad de la Ciudad Condal. ')}
+            </p>
+            <p>{t('El Hotel W cuenta con más de 450 habitaciones y suites, y ofrece a todos sus huéspedes una de las mejores panorámicas de la ciudad gracias a los increíbles ventanales que conforman todo el edificio.')}</p>
+            <p className="body__text">{t('Recomendamos el desplazamiento en taxi o en transporte público. El coste del parking durante el evento correrá a cargo de los asistentes.')}</p>
+          </div>
+          <div className="col-12 offset-md-1 col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.259749537602!2d2.187964715655394!3d41.36844100513206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3b185625025%3A0x59e80c780f7e2f0b!2sW%20Barcelona!5e0!3m2!1ses!2ses!4v1659886270219!5m2!1ses!2ses"
+              width="100%" height="100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              style={{border: 0, minHeight: 500}}
+              ></iframe>
+          </div>
+        </div>
       </div>
     </section>
 
