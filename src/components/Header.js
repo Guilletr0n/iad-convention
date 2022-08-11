@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withTranslation, useI18next } from 'gatsby-plugin-react-i18next';
+import { Link, withTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image";
 
 class Header extends Component {
@@ -55,7 +55,7 @@ class Header extends Component {
                       }`}
                     >
                       <Link className="nav-link text-expanded" to="/">
-                        {t('Convención Nacional’22')}
+                        {t('Convención Nacional')}
                       </Link>
                     </li>
                     <li
@@ -67,7 +67,7 @@ class Header extends Component {
                         className="nav-link text-expanded"
                         to="/program"
                       >
-                        {t('Program')}
+                        {t('Programa')}
                       </Link>
                     </li>
                     <li
@@ -79,7 +79,7 @@ class Header extends Component {
                         className="nav-link text-expanded"
                         to="/location"
                       >
-                        {t('Location')}
+                        {t('Localización')}
                       </Link>
                     </li>
                     <li
@@ -91,7 +91,7 @@ class Header extends Component {
                         className="nav-link text-expanded"
                         to="/hotels"
                       >
-                        {t('Hotels')}
+                        {t('Hoteles')}
                       </Link>
                       </li>
                       <li
@@ -111,12 +111,12 @@ class Header extends Component {
                       className="nav-link text-expanded"
                       to="/"
                       language='en'
-                      >English</Link>
+                      >{t('English')}</Link>
                     <Link
                       className="nav-link text-expanded"
                       language='es'
                       to="/"
-                      >Español</Link>
+                      >{t('Español')}</Link>
                     </li>
                   </ul>
                 </div>
