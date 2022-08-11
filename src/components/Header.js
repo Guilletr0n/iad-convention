@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { Link, withTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, withTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image";
+
 class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
       openMenu: false,
     };
+    
   }
   toggleMenu = value => {
     this.setState({ openMenu: value });
@@ -103,6 +105,18 @@ class Header extends Component {
                       >
                         {t('Entradas')}
                       </Link>
+                    </li>
+                    <li className='nav-item'>
+                    <Link
+                      className="nav-link text-expanded"
+                      to="/"
+                      language='en'
+                      >English</Link>
+                    <Link
+                      className="nav-link text-expanded"
+                      language='es'
+                      to="/"
+                      >Español</Link>
                     </li>
                   </ul>
                 </div>
