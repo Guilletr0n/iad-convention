@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { StaticImage } from "gatsby-plugin-image";
-import HeroAnim from '../assets/images/hotels-anim.png';
+import HeroAnim from '../assets/images/animated-barcelona.png';
 
 const ProgramPage = () => {
   const {t} = useTranslation();
