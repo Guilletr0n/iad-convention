@@ -33,15 +33,51 @@ const Footer = () => {
         </div>
         <div className="row text-center mt-5">  
           <div className="col-12">
-            <p className="m-0">
-              <a href="/legal" alt="aviso legal">
+            <div className="footer-links m-0">
+              <Link
+                className=""
+                to="/aviso-legal"
+              >
                 {t('Aviso Legal')}
-              </a>
-                <Link
-                  className=""
-                  to="/aviso-legal"
-                ></Link>
-            </p>
+              </Link>
+              <span className='share-label'>{t('Compartir')}:</span>
+              <Link
+                className=""
+                to="https://twitter.com/intent/tweet?text=https://www.convencioniadespana.com/"
+              >
+                <StaticImage
+                  src="../assets/icons/icon-twitter.svg"
+                  placeholder="none"
+                  alt="twitter"
+                  width={35}
+                  height={30}
+                />
+              </Link>
+              <Link
+                className=""
+                to="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.convencioniadespana.com%2F&amp;src=sdkpreparse"
+              >
+                <StaticImage
+                  src="../assets/icons/icon-facebook.svg"
+                  placeholder="none"
+                  alt="facebook"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+              <Link
+                className=""
+                to="https://www.linkedin.com/cws/share?url={www.convencioniadespana.com}"
+              >
+                <StaticImage
+                  src="../assets/icons/icon-linkedin.svg"
+                  placeholder="none"
+                  alt="linkedIn"
+                  width={30}
+                  height={30}
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
