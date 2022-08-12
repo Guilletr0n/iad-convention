@@ -34,8 +34,8 @@ const ProgramPage = () => {
             <h3 className="hotels--title">{t('W Hotel')}</h3>
             <p><strong>{t('Dirección')}:</strong> Plaça Rosa Del Vents 1, Final, Pg. de Joan de Borbó, 08039 Barcelona</p>
             <p><strong>{t('Teléfono')}:</strong> 932 95 28 00</p>
-            <p><strong>{t('Distancia hasta el evento')}: 0 Kms</strong></p>
-            <p><strong>{t('Precio')}:</strong>{t('')}</p>
+            <p><strong>{t('Distancia hasta el evento')}:</strong> 0 Kms</p>
+            <p><strong>{t('Precio')}:</strong></p>
             <p>{t('Descuento del 15% + Desayuno gratuito sobre tarifa web')}</p>
             <p>{t('Tasa turística no incluida')}</p>
             <p><strong>{t('Cómo reservar')}:</strong></p>
@@ -74,11 +74,10 @@ const ProgramPage = () => {
             <h3 className="hotels--title">{t('H10 Marina')}</h3>
             <p><strong>{t('Dirección')}:</strong> {t('Olympic Village, Av. del Bogatell, 64, 68, 08005 Barcelona')}</p>
             <p><strong>{t('Teléfono')}:</strong>{t(' 933 09 79 17')}</p>
-            <p><strong>{t('Distancia hasta el evento')}: 3,2 kms</strong></p>
+            <p><strong>{t('Distancia hasta el evento')}:</strong> 3,2 kms</p>
             <p><strong>{t('Precio')}:</strong>{t('')}</p>
               <p>135€{t('(IVA incluido) por habitación y noche')}</p>
               <p>{t('Incluye habitación superior, desayuno y acceso a spa')}</p>
-              <p>{t('Acuerdo corporate iad')}</p>
               <p>{t('Tasa turística no incluida')}</p>
               <p><strong>{t('Cómo reservar')}:</strong></p>
               <p>{t('Para realizar reserva, es necesario escribir un email a h10.marina.barcelona@h10hotels.com e indicar que se trata de una reserva del')} <strong>{t('acuerdo corporate iad')} </strong></p>
@@ -110,7 +109,7 @@ const ProgramPage = () => {
             <h3 className="hotels--title">{t('Exe Cristal Palace')}</h3>
             <p><strong>{t('Dirección')}:</strong>{t(' Carrer de la Diputació, 257, 08007 Barcelona')}</p>
             <p><strong>{t('Teléfono')}:</strong>{t(' 933 93 09 70')}</p>
-            <p><strong>{t('Distancia hasta el evento')}: 3,8 kms</strong></p>
+            <p><strong>{t('Distancia hasta el evento')}:</strong> 3,8 kms</p>
             <p><strong>{t('Precio')}:</strong>{t('')}</p>
             <p>DUI: {t('153€ \(IVA incluido) por habitación y noche')}</p>
             <p>DOB: {t('162€ \(IVA incluido) por habitación y noche')}</p>
@@ -146,7 +145,7 @@ const ProgramPage = () => {
             <h3 className="hotels--title">{t('Exe Plaza')}</h3>
             <p><strong>{t('Dirección:')}</strong>{t(' Ronda de la Universitat, 18, 08007 Barcelona')}</p>
             <p><strong>{t('Teléfono:')}</strong>{t(' 932 40 84 19')}</p>
-            <p><strong>{t('Distancia hasta el evento')}: 3,5 kms</strong></p>
+            <p><strong>{t('Distancia hasta el evento')}:</strong> 3,5 kms</p>
             <p><strong>{t('Precio')}:</strong></p>
             <p>DUI: 177€ {t('(IVA incluido) por habitación y noche')}</p>
             <p>DOB: 185€ {t('(IVA incluido) por habitación y noche')}</p>
@@ -182,7 +181,7 @@ const ProgramPage = () => {
             <h3 className="hotels--title">{t('Hotel KK')}</h3>
             <p><strong>{t('Dirección')}:</strong>{t(' Passeig de Picasso, 26, 30, 08003 Barcelona')}</p>
             <p><strong>{t('Teléfono')}:</strong>{t(' 935 47 86 00')}</p>
-            <p><strong>{t('Distancia hasta el evento')}: 2,4 kms</strong></p>
+            <p><strong>{t('Distancia hasta el evento')}:</strong> 2,4 kms</p>
             <p><strong>{t('Precio')}:</strong></p>
             <p>197,64€ {t('(IVA incluido) por habitación y noche (del 7 al 9 de octubre)')}</p>
             <p>{t('Incluye habitación Cosy Urban')}</p>

@@ -189,7 +189,7 @@ h1 {
   display: block;
   top: -20px;
   position: relative;
-  top: 0;
+  top: -30px;
   .container {
     padding: 0;
     .navbar-nav {
@@ -207,6 +207,12 @@ h1 {
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width:$b-md) {
+  #mainNav {
+    top: 0;
   }
 }
 
@@ -288,6 +294,7 @@ h1 {
     height: 96px;
     top: -10px;
     width: 100px;
+    gap: 2px;
   }
 }
 
