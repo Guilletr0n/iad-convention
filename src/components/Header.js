@@ -18,11 +18,12 @@ class Header extends Component {
     const { openMenu } = this.state;
     const { activeLink } = this.props;
     const { t } = this.props;
+    const { i18n } = this.props;
     return (
       <div className="container header-container">
         <div className="row">
           <div className="col-12 col-md-2 pt-3">
-            <StaticImage 
+            <StaticImage
               imgClassName="site-logo"
               className="site-logo-wrap"
               src="../assets/images/logo-header.png"
@@ -106,17 +107,38 @@ class Header extends Component {
                         {t('Entradas')}
                       </Link>
                     </li>
-                    <li className='nav-item'>
+                    <li className='nav-item flag-button'>
                     <Link
-                      className="nav-link text-expanded"
+                      className={`nav-link text-expanded ${i18n.language === 'en' ? 'lan-selected' : ' '}`}
                       to="/"
                       language='en'
-                      >{t('English')}</Link>
+                      >
+                        <StaticImage 
+                          src="../assets/icons/icon-flag-uk.png"
+                          className="flag-icon"
+                          placeholder="none"
+                          alt="icon flag uk"
+                          width={35}
+                          height={35}
+                        />
+                      </Link>
+                    
+                    </li>
+                    <li className="flag-button">
                     <Link
-                      className="nav-link text-expanded"
+                      className={`nav-link text-expanded ${i18n.language === 'es' ? 'lan-selected' : ' '}`}
                       language='es'
                       to="/"
-                      >{t('Español')}</Link>
+                      >
+                        <StaticImage 
+                          src="../assets/icons/icon-flag-spain.png"
+                          className="flag-icon"
+                          placeholder="none"
+                          alt="icon flag spain"
+                          width={35}
+                          height={35}
+                        />
+                      </Link>
                     </li>
                   </ul>
                 </div>

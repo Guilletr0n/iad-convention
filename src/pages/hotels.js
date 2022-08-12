@@ -21,7 +21,7 @@ const ProgramPage = () => {
     <section className="page-section">
       <div className="container hotels-container">
         <div className="row hotels-list-row">
-          <div className="col-12 col-md-2">
+          <div className="col-12 col-md-3">
             <StaticImage 
               className="hotel-logo"
               src="../assets/images/w-hotel-logo.png"
@@ -30,7 +30,7 @@ const ProgramPage = () => {
               height="186"
               />
           </div>
-          <div className="col-12 col-md-7">
+          <div className="col-12 col-md-6">
             <h3 className="hotels--title">{t('W Hotel')}</h3>
             <p><strong>{t('Dirección')}:</strong> Plaça Rosa Del Vents 1, Final, Pg. de Joan de Borbó, 08039 Barcelona</p>
             <p><strong>{t('Teléfono')}:</strong> 932 95 28 00</p>

@@ -188,11 +188,24 @@ h1 {
 #mainNav {
   display: block;
   top: -20px;
+  position: relative;
+  top: 0;
   .container {
     padding: 0;
     .navbar-nav {
-      margin-top: 20px;
+      margin-top: 7px;
+      left: 30px;
       position: relative;
+      .flag-button {
+        position: relative;
+        top: -7px;
+        .lan-selected {
+          .flag-icon {
+            border: 3px solid #00628C;
+            border-radius: 100%;
+          }
+        }
+      }
     }
   }
 }
@@ -201,6 +214,8 @@ h1 {
   z-index: 1;
   width: 260px;
   left: 10px;
+  position: relative;
+  top: 7px;
   .site-logo {
     width: 100%;
   }
