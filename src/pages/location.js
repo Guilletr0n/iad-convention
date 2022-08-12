@@ -27,6 +27,7 @@ const ProgramPage = () => {
               {t('La Convención Nacional de iad España tendrá lugar')}
             </p>
             <p>{t('El Hotel W cuenta con más de 450 habitaciones y suites')}</p>
+            <p>{t('Ubicado a primera línea de playa')}</p>
             <p className="body__text">{t('Recomendamos el desplazamiento en taxi')}</p>
           </div>
           <div className="col-12 offset-md-1 col-md-6">

@@ -27,7 +27,7 @@ const Footer = () => {
               {t('es uno de los eventos más importantes de la red iad. Un momento de reencuentro y de celebración de los éxitos cosechados. Este año se celebrará en el')}
               <strong> {t('Hotel W')} </strong>
               {t('de Barcelona y será una cita exclusiva para los miembros del')}
-              <strong> {t('Grupo iad')}</strong>
+              <strong> {t('Grupo iad')}.</strong>
             </p>
           </div>
         </div>
