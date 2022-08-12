@@ -76,7 +76,7 @@ const ProgramPage = () => {
             <p><strong>{t('Teléfono')}:</strong>{t(' 933 09 79 17')}</p>
             <p><strong>{t('Distancia hasta el evento')}:</strong> 3,2 kms</p>
             <p><strong>{t('Precio')}:</strong>{t('')}</p>
-              <p>135€{t('(IVA incluido) por habitación y noche')}</p>
+              <p>135€ {t('(IVA incluido) por habitación y noche')}</p>
               <p>{t('Incluye habitación superior, desayuno y acceso a spa')}</p>
               <p>{t('Tasa turística no incluida')}</p>
               <p><strong>{t('Cómo reservar')}:</strong></p>
@@ -89,7 +89,7 @@ const ProgramPage = () => {
               href="#mailgo"
               data-address="h10.marina.barcelona"
               data-domain="h10hotels.com"
-              data-subject="Reserva – acuerdo corporate iad"
+              data-subject={`${t('Reserva – acuerdo corporate iad')}`}
               >{t('Reservar')}
             </a>
           </div>
@@ -125,7 +125,7 @@ const ProgramPage = () => {
               href="#mailgo"
               data-address="reservas"
               data-domain="execristalpalace.com"
-              data-subject="Reserva- Convención Nacional iad"
+              data-subject={`${t('Reserva- Convención Nacional iad')}`}
               >{t('Reservar')}
             </a>
           </div>
@@ -161,7 +161,7 @@ const ProgramPage = () => {
               href="#mailgo"
               data-address="info"
               data-domain="exeplazacatalunya.com"
-              data-subject="Convención Nacional iad"
+              data-subject={`${t('Convención Nacional iad')}`}
               >{t('Reservar')}
             </a>
           </div>
@@ -197,7 +197,7 @@ const ProgramPage = () => {
               href="#mailgo"
               data-address="reservations.picasso"
               data-domain="kkhotels.com"
-              data-subject={`IAD-CN22`}
+              data-subject={`${t('IAD-CN22')}`}
               >{t('Reservar')}
             </a>
           </div>

@@ -120,7 +120,7 @@ class Header extends Component {
                     <li className='nav-item flag-button'>
                     <Link
                       className={`nav-link text-expanded ${i18n.language === 'en' ? 'lan-selected' : ' '}`}
-                      to="/"
+                      to={`/${activeLink}`}
                       language='en'
                       >
                         <StaticImage 
@@ -137,8 +137,8 @@ class Header extends Component {
                     <li className="flag-button">
                     <Link
                       className={`nav-link text-expanded ${i18n.language === 'es' ? 'lan-selected' : ' '}`}
+                      to={`/${activeLink}`}
                       language='es'
-                      to="/"
                       >
                         <StaticImage 
                           src="../assets/icons/icon-flag-spain.png"

@@ -1,6 +1,6 @@
 {
   "Home": "Home",
-  "Programa": "Program",
+  "Programa": "Schedule",
   "Localización": "Location",
   "Hoteles": "Hotels",
   "Entradas": "Tickets",
@@ -21,9 +21,9 @@
   "Cierre de la Convención Nacional": "Closure of the National Convention",
   "Página no encontrada": "Page not found",
   "La URL no es válida": "URL is not valid",
-  "La Convención Nacional de iad España tendrá lugar": "The 2022 National Convention of iad (Spain will be held at the prestigious and symbolic W Hotel in Barcelona.",
+  "La Convención Nacional de iad España tendrá lugar": "The 2022 National Convention of iad (Spain will be held at the prestigious and symbolic W Hotel in Barcelona",
   "El Hotel W cuenta con más de 450 habitaciones y suites": "The W Hotel has 450 rooms and suites and offers all of its guests one of the best panoramic city views, thanks to its incredible windows that make up the building. We recommend using a taxi or public transport. Any parking charges incurred during the event will be the responsibility of the participants.",
-  "Recomendamos el desplazamiento en taxi": "We recommend using a taxi or public transport. Any parking charges incurred during the event will be the responsibility of the participants.",
+  "Recomendamos el desplazamiento en taxi": "We recommend using a taxi or public transport. Any parking charges incurred during the event will be the responsibility of the participants",
   "Dirección": "Address",
   "Teléfono": "Phone",
   "Distancia hasta el evento": "Distance to the event",
@@ -54,5 +54,8 @@
   "Tasa turística y desayuno no incluidos": "Tourism tax and breakfast are not included",
   "Para realizar reserva, es necesario escribir un email a reservations.picasso@kkhotels.com e indicar la referencia": "To make the booking you should write an email to reservations.picasso@kkhotels.com and indicate this reference number",
   "Comprar entradas para la Convención Nacional 2022 de iad España": "Buy tickets for the 2022 iad Spain National Convention",
-  "Comprar": "Buy"
+  "Comprar": "Buy",
+  "Reserva – acuerdo corporate iad":"Book - iad corporate",
+  "Reserva- Convención Nacional iad": "Booking - National Convention iad",
+  "IAD-CN22": "IAD-CN22"
 }

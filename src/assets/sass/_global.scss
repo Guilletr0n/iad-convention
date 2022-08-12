@@ -194,7 +194,7 @@ h1 {
     padding: 0;
     .navbar-nav {
       margin-top: 7px;
-      left: 30px;
+      left: 0;
       position: relative;
       .flag-button {
         position: relative;
@@ -213,6 +213,9 @@ h1 {
 @media only screen and (min-width:$b-md) {
   #mainNav {
     top: 0;
+    .navbar-nav {
+      left: 30px;
+    }
   }
 }
 

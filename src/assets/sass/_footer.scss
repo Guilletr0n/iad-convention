@@ -4,6 +4,10 @@
   @include avenir-font;
   color: white;
 
+  .footer-logo {
+    text-align: center;
+  }
+
   .footer__text {
     @include avenir-font;
     padding: $font-L;

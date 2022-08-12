@@ -11,8 +11,8 @@ const Footer = () => {
       <div className="container">
         
         <div className="row">
-          <div className="col-md-2">
-            <StaticImage 
+          <div className="col-12 col-md-2 footer-logo">
+            <StaticImage
               src="../assets/images/footer-logo.png"
               placeholder="none"
               alt="logo"
@@ -20,7 +20,7 @@ const Footer = () => {
               height={152}
             />
           </div>
-          <div className="col-md-10">
+          <div className="col-12 col-md-10">
             <p className="footer__text">
               {t('La')}
               <strong> {t('Convención Nacional')} </strong>
