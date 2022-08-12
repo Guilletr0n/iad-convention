@@ -41,9 +41,9 @@ const ProgramPage = () => {
             <p><strong>{t('Cómo reservar')}:</strong></p>
             <p>
               {t('Realización de la reserva a través de la web del hotel introduciendo el')}
-              <strong> {t('código de descuento: 2GS ')}</strong>
+              <strong> {t('código de descuento: 2GS')} </strong>
               {t('en el momento de realizar la reserva. Código promocional válido las noches de 7 y 8 de Octubre')}
-              <p className="pt-2">{t('¿Cómo reservar utilizando el código descuento?')}</p>
+              <p className="pt-3"><strong>{t('¿Cómo reservar utilizando el código descuento?')}</strong></p>
               {t('Acceder a la web del')}<a referrerPolicy='no-referrer' href="https://www.espanol.marriott.com/hotels/travel/bcnwh-w-barcelona/?scid=d5e1b25e-2049-49ae-9bd5-2a7bdde45b71&gclid=EAIaIQobChMIltzQ79eW-QIVB-7tCh3_HwPjEAAYASAAEgKTwvD_BwE&gclsrc=aw.ds"> {t('W Barcelona')}</a>
               {t(', clicar sobre “ver tarifas” situado en la parte superior derecha de la home. Finalmente, cuando aparece la ventana emergente para hacer la reserva, desplegar el apartado “tarifas especiales” y seleccionar la opción “Corporativo/Promoción/Nº SET”')}
             </p>

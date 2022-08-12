@@ -34,7 +34,7 @@ module.exports = {
       options: {
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
         languages: [`en`, `es`],
-        defaultLanguage: `en`,
+        defaultLanguage: `es`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
         siteUrl: `http://www.convencioniadespana.com`,
         // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
