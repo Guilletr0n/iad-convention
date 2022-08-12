@@ -2,6 +2,7 @@ import React from 'react';
 
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
+import { graphql } from 'gatsby';
 
 const IndexPage = () => {
   const {t} = useTranslation();
