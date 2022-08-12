@@ -312,3 +312,20 @@ h1 {
   position: relative;
   top: -25px;
 }
+
+.navbar-toggler {
+  .navbar-toggler-icon {
+    display: none;
+  }
+  .close-button {
+    display: inline-block;
+  }
+  &.collapsed {
+    .close-button {
+      display: none;
+    }
+    .navbar-toggler-icon {
+      display: inline-block;
+    }
+  }
+}

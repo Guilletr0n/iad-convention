@@ -35,6 +35,7 @@ class Header extends Component {
           <div className="col-12 col-md-9 pt-3 main-nav-container ">
             <nav className="navbar navbar-expand-lg navbar-dark" id="mainNav">
               <div className="container">
+                
                 <button
                   onClick={_ => this.toggleMenu(!openMenu)}
                   className={`navbar-toggler  ${openMenu ? '' : 'collapsed'}`}
@@ -43,6 +44,15 @@ class Header extends Component {
                   aria-expanded={openMenu}
                   aria-label="Toggle navigation"
                 >
+                  <span>
+                  <StaticImage
+                  imgClassName="close-button"
+                    src="../assets/icons/icon-close.svg"
+                    placeholder="none"
+                    alt="close icon"
+                    width={30}
+                    height={30}
+                  /></span>
                   <span className="navbar-toggler-icon"></span>
                 </button>
                 <div
