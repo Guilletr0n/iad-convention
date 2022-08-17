@@ -25,8 +25,9 @@ class Header extends Component {
     return (
       <div className="container header-container">
         <div className="row">
-          <div className="col-12 col-md-2 pt-3">
+          <div className="col-7 col-md-2 pt-3">
             <StaticImage
+              className="header-logo"
               imgClassName="site-logo"
               src="../assets/images/logo-header.png"
               placeholder="none"

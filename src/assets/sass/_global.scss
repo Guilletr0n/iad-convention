@@ -218,11 +218,13 @@ h1 {
     }
   }
 }
-
+.header-logo {
+  position: relative;
+  left: 16px;
+}
 .site-logo-wrap {
   width: 220px;
-  //height: 53px;
-  left: 10px;
+  left: 24px;
   position: relative;
   top: 24px;
   .site-logo {
@@ -280,6 +282,10 @@ h1 {
 }
 
 @media only screen and (min-width:$b-md) {
+  .header-logo {
+    position: relative;
+    top: 16px;
+  }
   .site-logo-wrap {
     width: 220px;
     left: 0;
