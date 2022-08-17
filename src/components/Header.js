@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link, withTranslation } from 'gatsby-plugin-react-i18next';
 import { StaticImage } from "gatsby-plugin-image";
+import { Menu, MenuItem, MenuButton, MenuDivider } from '@szhsin/react-menu';
+import '@szhsin/react-menu/dist/index.css';
 
 class Header extends Component {
   constructor(props) {
@@ -19,6 +21,7 @@ class Header extends Component {
     const { activeLink } = this.props;
     const { t } = this.props;
     const { i18n } = this.props;
+    
     return (
       <div className="container header-container">
         <div className="row">
@@ -104,40 +107,48 @@ class Header extends Component {
                       >
                         {t('Hoteles')}
                       </Link>
-                      </li>
-                      <li
-                      className={`nav-item px-lg-4 ${
-                        activeLink === 'tickets' ? 'active' : ''
-                      }`}
-                    >
-                      <Link
-                        className="nav-link text-expanded"
-                        to="/tickets"
-                      >
-                        {t('Entradas')}
-                      </Link>
                     </li>
-                    <li className='nav-item flag-button'>
+                    <li
+                    className={`nav-item px-lg-4 ${
+                      activeLink === 'tickets' ? 'active' : ''
+                    }`}
+                  >
                     <Link
-                      className={`nav-link text-expanded ${i18n.language === 'en' ? 'lan-selected' : ' '}`}
-                      to={`/${activeLink}`}
-                      language='en'
-                      >
+                      className="nav-link text-expanded"
+                      to="/tickets"
+                    >
+                      {t('Entradas')}
+                    </Link>
+                   </li>
+                   <li>
+                    <Menu styles={{
+                              boxShadow: 'none',
+                              minWidth: '50px',
+                              marginTop: '12px'
+                          }}
+                          menuButton={<MenuButton>
                         <StaticImage 
-                          src="../assets/icons/icon-flag-uk.png"
-                          className="flag-icon"
+                          src={`../assets/icons/icon-flag-uk.png`}
+                          className={`flag-icon ${i18n.language === 'en' ? '' : 'd-none'}`}
                           placeholder="none"
-                          alt="icon flag uk"
+                          alt="icon flag"
                           width={35}
                           height={35}
                         />
-                      </Link>
-                    
-                    </li>
-                    <li className="flag-button">
-                    <Link
+                        <StaticImage 
+                          src={`../assets/icons/icon-flag-spain.png`}
+                          className={`flag-icon ${i18n.language === 'es' ? '' : 'd-none'}`}
+                          placeholder="none"
+                          alt="icon flag"
+                          width={35}
+                          height={35}
+                        />
+                      
+                    </MenuButton>}>
+                        <MenuItem styles={{width:'50px'}}>
+                        <Link
                       className={`nav-link text-expanded ${i18n.language === 'es' ? 'lan-selected' : ' '}`}
-                      to={`/${activeLink}`}
+                      to={`/${activeLink === 'home' ? '' : activeLink}`}
                       language='es'
                       >
                         <StaticImage 
@@ -149,7 +160,25 @@ class Header extends Component {
                           height={35}
                         />
                       </Link>
-                    </li>
+                        </MenuItem>
+                        <MenuItem styles={{width:'50px'}}>
+                        <Link
+                      className={`nav-link text-expanded ${i18n.language === 'en' ? 'lan-selected' : ' '}`}
+                      to={`/${activeLink === 'home' ? '' : activeLink}`}
+                      language='en'
+                      >
+                        <StaticImage 
+                          src="../assets/icons/icon-flag-uk.png"
+                          className="flag-icon"
+                          placeholder="none"
+                          alt="icon flag uk"
+                          width={35}
+                          height={35}
+                        />
+                      </Link>
+                        </MenuItem>
+                    </Menu>
+                  </li>
                   </ul>
                 </div>
               </div>
