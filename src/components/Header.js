@@ -28,7 +28,6 @@ class Header extends Component {
           <div className="col-12 col-md-2 pt-3">
             <StaticImage
               imgClassName="site-logo"
-              className="site-logo-wrap"
               src="../assets/images/logo-header.png"
               placeholder="none"
               alt="iad logo"
@@ -109,10 +108,22 @@ class Header extends Component {
                       </Link>
                     </li>
                     <li
+                      className={`nav-item px-lg-4 ${
+                        activeLink === 'faq' ? 'active' : ''
+                      }`}
+                    >
+                    <Link
+                      className="nav-link text-expanded"
+                      to="/faq"
+                    >
+                      {t('FAQ')}
+                    </Link>
+                   </li>
+                    <li
                     className={`nav-item px-lg-4 ${
                       activeLink === 'tickets' ? 'active' : ''
                     }`}
-                  >
+                    >
                     <Link
                       className="nav-link text-expanded"
                       to="/tickets"
@@ -120,15 +131,17 @@ class Header extends Component {
                       {t('Entradas')}
                     </Link>
                    </li>
+                   
                    <li>
                     <Menu styles={{
                               boxShadow: 'none',
                               minWidth: '50px',
-                              marginTop: '12px'
+                              marginTop: '12px',
+                              left: '-50px'
                           }}
                           menuButton={<MenuButton>
                         <StaticImage 
-                          src={`../assets/icons/icon-flag-uk.png`}
+                          src="../assets/icons/icon-flag-uk.png"
                           className={`flag-icon ${i18n.language === 'en' ? '' : 'd-none'}`}
                           placeholder="none"
                           alt="icon flag"
@@ -136,7 +149,7 @@ class Header extends Component {
                           height={35}
                         />
                         <StaticImage 
-                          src={`../assets/icons/icon-flag-spain.png`}
+                          src="../assets/icons/icon-flag-spain.png"
                           className={`flag-icon ${i18n.language === 'es' ? '' : 'd-none'}`}
                           placeholder="none"
                           alt="icon flag"
@@ -145,7 +158,7 @@ class Header extends Component {
                         />
                       
                     </MenuButton>}>
-                        <MenuItem styles={{width:'50px'}}>
+                        <MenuItem >
                         <Link
                       className={`nav-link text-expanded ${i18n.language === 'es' ? 'lan-selected' : ' '}`}
                       to={`/${activeLink === 'home' ? '' : activeLink}`}
@@ -161,7 +174,7 @@ class Header extends Component {
                         />
                       </Link>
                         </MenuItem>
-                        <MenuItem styles={{width:'50px'}}>
+                        <MenuItem >
                         <Link
                       className={`nav-link text-expanded ${i18n.language === 'en' ? 'lan-selected' : ' '}`}
                       to={`/${activeLink === 'home' ? '' : activeLink}`}

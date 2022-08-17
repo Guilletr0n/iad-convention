@@ -220,16 +220,17 @@ h1 {
 }
 
 .site-logo-wrap {
-  z-index: 1;
-  width: 260px;
+  width: 220px;
+  //height: 53px;
   left: 10px;
   position: relative;
-  top: 7px;
+  top: 24px;
   .site-logo {
     width: 100%;
   }
 }
 .main-nav-container {
+  z-index: 1;
   display: flex;
   justify-content: flex-end;
   top: -30px;
@@ -280,7 +281,7 @@ h1 {
 
 @media only screen and (min-width:$b-md) {
   .site-logo-wrap {
-    width: 240px;
+    width: 220px;
     left: 0;
     .site-logo {
       width: 100%;
@@ -329,6 +330,16 @@ h1 {
     }
     .navbar-toggler-icon {
       display: inline-block;
+    }
+  }
+}
+
+.faq-page {
+  ul {
+    margin-top: 2.5rem;
+    list-style-type: none;
+    li {
+      font-weight: bold;
     }
   }
 }
