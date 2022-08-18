@@ -18,7 +18,7 @@ const RegistrationPage = () => {
           <div className="mx-auto">
             <a href="https://my.weezevent.com/convencion-nacional22-iad-espana"
               className="btn btn--ticket"
-              referrerpolicy="no-referrer"
+              rel="noreferrer"
               target="_blank">
               {t('Comprar')}
             </a>

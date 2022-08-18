@@ -4,7 +4,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 
 const Footer = () => {
-
   const {t} = useTranslation();
   return (
     <footer className="footer text-faded">

@@ -3,24 +3,25 @@ import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 
-const LegalPage = () => {
+const FaqPage = () => {
   const {t} = useTranslation();
   return (
-    <Layout>
+    <Layout activeLink="faq">
       <section className="page-section faq-page">
-      <div className="container">
-        <div className="row">
-          <h1 className="mt-5 mb-3">{t('Preguntas Frecuentes')}</h1>
-          <ul className="faq-list">
-            <li>
-              <p className="faq-list__question">{t('Quién puede asistir al evento')}</p>
-              <ul className="faq-list__answers">
-                <li>{t('Todos los asesores y managers')}</li>
-                <li>{t('También podrán asistir managers internacionales')}</li>
-                <li>{t('Miembros de la sede de iad España')}</li>
-              </ul>
-            </li>
-            <li>
+        <div className="container">
+          <div className="row">
+            <div class="col-12">
+              <h1 className="mt-5 mb-3">{t('Preguntas Frecuentes')}</h1>
+              <ul className="faq-list">
+                <li>
+                  <p className="faq-list__question">{t('Quién puede asistir al evento')}</p>
+                  <ul className="faq-list__answers">
+                    <li>{t('Todos los asesores y managers')}</li>
+                    <li>{t('También podrán asistir managers internacionales')}</li>
+                    <li>{t('Miembros de la sede de iad España')}</li>
+                  </ul>
+                </li>
+                <li>
               <p className="faq-list__question">{t('Es mi primera Convención Nacional')}</p>
               <ul className="faq-list__answers">
                 <li>{t('La Convención Nacional es uno de los eventos más importantes')}</li>
@@ -47,7 +48,7 @@ const LegalPage = () => {
                   href="https://www.pinterest.es/search/pins/?q=casual%20chic&rs=typed&term_meta%5b%5d=casual%7Ctyped&term_meta%5b%5d=chic%7Ctyped"
                   title="casual chic"
                   target="_blank"
-                  referrerPolicy="no-referrer"
+                  rel="noreferrer"
                   >casual chic</a>
                 </li>
               </ul>
@@ -73,7 +74,7 @@ const LegalPage = () => {
               <p className="faq-list__question">{t('¿Puedo comprar entradas a mis ahijados o a mi equipo?')}</p>
               <ul className="faq-list__answers">
                 <li>{t('Sí, es posible en la página de compra de tus entradas')} <strong>{t('datos del asistente')}</strong>
-                {t('y pon tus datos en')} <strong>{t('Datos comprador')}</strong>. {t('De esta forma')}</li>
+                <span> {t('y pon tus datos en')}</span> <strong>{t('Datos comprador')}</strong>. {t('De esta forma')}</li>
               </ul>
             </li>
             <li>
@@ -135,15 +136,16 @@ const LegalPage = () => {
                   </a></strong> {t('y aclararemos tus dudas')}</li>
               </ul>
             </li>
-          </ul>
-        </div>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
   )
 }
 
-export default LegalPage;
+export default FaqPage;
 
 export const query = graphql`
   query ($language: String!) {

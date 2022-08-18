@@ -4,7 +4,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 
-const IndexPage = () => {
+const ErrorPage = () => {
   const {t} = useTranslation();
   return (
   <Layout noFooter>
@@ -25,7 +25,7 @@ const IndexPage = () => {
   </Layout>
 )};
 
-export default IndexPage;
+export default ErrorPage;
 
 export const query = graphql`
   query ($language: String!) {

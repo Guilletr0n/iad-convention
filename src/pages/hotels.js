@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { StaticImage } from "gatsby-plugin-image";
 import HeroAnim from '../assets/images/animated-barcelona.png';
 
-const ProgramPage = () => {
+const HotelsPage = () => {
   const {t} = useTranslation();
   return (
   <Layout activeLink="hotels">
@@ -44,14 +44,14 @@ const ProgramPage = () => {
               <strong> {t('código de descuento: 2GS')} </strong>
               {t('en el momento de realizar la reserva. Código promocional válido las noches de 7 y 8 de Octubre')}
               <p className="pt-3"><strong>{t('¿Cómo reservar utilizando el código descuento?')}</strong></p>
-              {t('Acceder a la web del')}<a referrerPolicy='no-referrer' href="https://www.espanol.marriott.com/hotels/travel/bcnwh-w-barcelona/?scid=d5e1b25e-2049-49ae-9bd5-2a7bdde45b71&gclid=EAIaIQobChMIltzQ79eW-QIVB-7tCh3_HwPjEAAYASAAEgKTwvD_BwE&gclsrc=aw.ds"> {t('W Barcelona')}</a>
+              {t('Acceder a la web del')}<a rel="noreferrer" href="https://www.espanol.marriott.com/hotels/travel/bcnwh-w-barcelona/?scid=d5e1b25e-2049-49ae-9bd5-2a7bdde45b71&gclid=EAIaIQobChMIltzQ79eW-QIVB-7tCh3_HwPjEAAYASAAEgKTwvD_BwE&gclsrc=aw.ds"> {t('W Barcelona')}</a>
               {t(', clicar sobre “ver tarifas” situado en la parte superior derecha de la home. Finalmente, cuando aparece la ventana emergente para hacer la reserva, desplegar el apartado “tarifas especiales” y seleccionar la opción “Corporativo/Promoción/Nº SET”')}
             </p>
           </div>
           <div className="col-12 col-md-3">
-            <a className="map__btn" target="_blank" href="https://g.page/w-barcelona-hotel?share">{t('Cómo llegar')}</a>
+            <a className="map__btn" rel="noreferrer" target="_blank" href="https://g.page/w-barcelona-hotel?share">{t('Cómo llegar')}</a>
             <a 
-              referrerPolicy='no-referrer'
+              rel="noreferrer"
               target="_blank"
               className="email__btn"
               href="https://www.espanol.marriott.com/hotels/travel/bcnwh-w-barcelona/?scid=d5e1b25e-2049-49ae-9bd5-2a7bdde45b71&gclid=EAIaIQobChMIltzQ79eW-QIVB-7tCh3_HwPjEAAYASAAEgKTwvD_BwE&gclsrc=aw.ds"
@@ -83,7 +83,7 @@ const ProgramPage = () => {
               <p>{t('Para realizar reserva, es necesario escribir un email a h10.marina.barcelona@h10hotels.com e indicar que se trata de una reserva del')} <strong>{t('acuerdo corporate iad')} </strong></p>
           </div>
           <div className="col-12 col-md-3">
-            <a className="map__btn" target="_blank" href="https://g.page/h10-marina-barcelona?share">{t('Cómo llegar')}</a>
+            <a className="map__btn" rel="noreferrer" target="_blank" href="https://g.page/h10-marina-barcelona?share">{t('Cómo llegar')}</a>
             <a 
               className="email__btn"
               href="#mailgo"
@@ -119,7 +119,7 @@ const ProgramPage = () => {
             <p>{t('Para realizar reserva, es necesario escribir un email a reservas@execristalpalace.com e indicar que se trata de una reserva en referencia a la')} <strong>{t('Convención Nacional iad')}</strong></p>
           </div>
           <div className="col-12 col-md-3">
-            <a className="map__btn" target="_blank" href="https://g.page/hotel-exe-cristal-palace?share">{t('Cómo llegar')}</a>
+            <a className="map__btn" rel="noreferrer" target="_blank" href="https://g.page/hotel-exe-cristal-palace?share">{t('Cómo llegar')}</a>
             <a 
               className="email__btn"
               href="#mailgo"
@@ -155,7 +155,7 @@ const ProgramPage = () => {
             <p>{t('Para realizar reserva, es necesario escribir un email a info@exeplazacatalunya.com e indicar que se trata de una reserva en referencia a la')}<strong> {t('Convención Nacional iad')}</strong></p>
           </div>
           <div className="col-12 col-md-3">
-            <a className="map__btn" target="_blank" href="https://g.page/hotel-exe-plaza-catalunya?share">{t('Cómo llegar')}</a>
+            <a className="map__btn" rel="noreferrer" target="_blank" href="https://g.page/hotel-exe-plaza-catalunya?share">{t('Cómo llegar')}</a>
             <a 
               className="email__btn"
               href="#mailgo"
@@ -191,7 +191,7 @@ const ProgramPage = () => {
           </div>
         
           <div className="col-12 col-md-3">
-            <a className="map__btn" target="_blank" href="https://goo.gl/maps/3xF9L3sHBK1h1MXA8">{t('Cómo llegar')}:</a>
+            <a className="map__btn" rel="noreferrer" target="_blank" href="https://goo.gl/maps/3xF9L3sHBK1h1MXA8">{t('Cómo llegar')}:</a>
             <a 
               className="email__btn"
               href="#mailgo"
@@ -207,7 +207,7 @@ const ProgramPage = () => {
   </Layout>
 )};
 
-export default ProgramPage;
+export default HotelsPage;
 
 export const query = graphql`
   query ($language: String!) {

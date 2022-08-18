@@ -6,7 +6,7 @@ import { graphql } from 'gatsby';
 const LegalPage = () => {
   const {t} = useTranslation();
   return (
-    <Layout noWarning={true}>
+    <Layout noWarning>
       <section className="page-section legal-page">
       <div className="container">
         <div className="row">

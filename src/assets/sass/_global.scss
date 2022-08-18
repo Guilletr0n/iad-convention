@@ -373,3 +373,16 @@ h1 {
     font-weight: bold;
   }
 }
+
+.szh-menu-button {
+  border: none;
+  background-color: transparent;
+}
+.szh-menu-container {
+  max-width: 40px;
+  background-color: transparent;
+  .szh-menu {
+    min-width: 2rem;
+    left: -20px;
+ }
+}

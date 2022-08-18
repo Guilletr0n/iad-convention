@@ -134,12 +134,8 @@ class Header extends Component {
                    </li>
                    
                    <li>
-                    <Menu styles={{
-                              boxShadow: 'none',
-                              minWidth: '50px',
-                              marginTop: '12px',
-                              left: '-50px'
-                          }}
+                    <Menu offsetY={6}
+                          offsetX={-24}
                           menuButton={<MenuButton>
                         <StaticImage 
                           src="../assets/icons/icon-flag-uk.png"
