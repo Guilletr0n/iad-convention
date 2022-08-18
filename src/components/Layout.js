@@ -7,7 +7,7 @@ import '../assets/sass/business-casual.scss';
 import Footer from './Footer';
 import SiteHeader from './SiteHeader';
 import Header from './Header';
-
+import Warning from './Warning';
 class Layout extends Component {
   render() {
     const {
@@ -16,6 +16,7 @@ class Layout extends Component {
       noFooter,
       noSiteHeader,
       activeLink,
+      noWarning
     } = this.props;
     return (
       <StaticQuery
@@ -50,6 +51,7 @@ class Layout extends Component {
               {!noSiteHeader ? <SiteHeader /> : null}
               {!noHeader ? <Header activeLink={activeLink} /> : null}
               {children}
+              {!noWarning ? <Warning/> :null}
               {!noFooter ? <Footer /> : null}
             </div>
           </>
@@ -65,6 +67,7 @@ Layout.propTypes = {
   noHeader: PropTypes.bool,
   noSiteHeader: PropTypes.bool,
   activeLink: PropTypes.string,
+  noWarning: PropTypes.bool,
 };
 
 export default Layout;

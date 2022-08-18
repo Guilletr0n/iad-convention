@@ -341,11 +341,35 @@ h1 {
 }
 
 .faq-page {
-  ul {
-    margin-top: 2.5rem;
-    list-style-type: none;
-    li {
+  
+  .faq-list {
+    list-style-type: decimal;
+    padding: 0;
+    p {
+      margin-top: 1rem;
+    }
+    &__question {
+      margin-top: 3rem;
       font-weight: bold;
     }
+
+    &__answers {
+      list-style-type: none;
+      padding-left: 0.5rem;
+      li {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.warning {
+  background-color: $color-orange-light;
+  padding: 2rem;
+  &__title {
+    width: 100%;
+    text-align: center;
+    color: $color-orange;
+    font-weight: bold;
   }
 }
