@@ -1,0 +1,39 @@
+#mainNav {
+  background-color: fade-out($color-blue-light, 0.1);
+  background-color: transparent;
+  @include heading-font;
+  .navbar-brand {
+    color: $primary;
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: fade-out($color-blue-dark, 0.3);
+        font-weight: 800;
+      }
+      &.active {
+        .nav-link {
+          color: $color-blue-dark;
+          border-bottom: 2px solid $color-orange;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 0.9rem;
+          &:hover {
+            color: fade-out($color-blue-dark, 0.6);
+          }
+        }
+        &.active {
+          .nav-link:hover {
+            color: $color-blue-dark;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.rc-menu-button {
+  border: none;
+  background-color: transparent;
+}
+
+.rc-menu-container {
+  .rc-menu {
+    left: -50px;
+    &__item {
+
+    }
+  }
+}
