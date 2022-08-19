@@ -19,7 +19,7 @@ const FaqPage = () => {
                   <ul className="faq-list__answers">
                     <li>{t('Todos los asesores y managers')}</li>
                     <li>{t('También podrán asistir')} <strong>{t('tambien managers internacionales')}</strong></li>
-                    <li>{t('Miembros de la')} <strong>{t('sede iad España')}</strong> {t('y el resto de filiales del Grupo iad.')}</li>
+                    <li>{t('Miembros de la')} <strong>{t('sede iad España')}</strong> {t('y el resto de filiales del Grupo iad')}.</li>
                   </ul>
                 </li>
                 <li>
@@ -37,7 +37,7 @@ const FaqPage = () => {
                   <p>{t('*La tarifa “Early Bird,” de coste')}</p>
                 </li>
                 <li>
-                <strong>{t('Full Price')}</strong> {t('Precio 89,00€ (IVA no incluido)')}
+                <strong>{t('Full Price')}</strong> {t('Precio 89,00€ (IVA no incluido)')}.
                 </li>
                 <li>{t('Managers internacionales con')}</li>
               </ul>
@@ -137,12 +137,12 @@ const FaqPage = () => {
             <li>
               <p className="faq-list__question">{t('¿Tienes más preguntas?')}</p>
               <ul className="faq-list__answers">
-                <li>{t('Contacta con')} <strong><a
+                <li>{t('Contacta con')} <a
                   href="#mailgo"
                   data-address="eventos"
                   data-domain="iadgroup.es"
                   >eventos@iadgroup.es
-                  </a></strong> {t('y aclararemos tus dudas')}</li>
+                  </a> {t('y aclararemos tus dudas')}</li>
               </ul>
             </li>
               </ul>
