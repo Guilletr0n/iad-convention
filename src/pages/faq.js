@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image";
 
 const FaqPage = () => {
   const {t} = useTranslation();
@@ -17,8 +18,8 @@ const FaqPage = () => {
                   <p className="faq-list__question">{t('Quién puede asistir al evento')}</p>
                   <ul className="faq-list__answers">
                     <li>{t('Todos los asesores y managers')}</li>
-                    <li>{t('También podrán asistir managers internacionales')}</li>
-                    <li>{t('Miembros de la sede de iad España')}</li>
+                    <li>{t('También podrán asistir')} <strong>{t('tambien managers internacionales')}</strong></li>
+                    <li>{t('Miembros de la')} <strong>{t('sede iad España')}</strong> {t('y el resto de filiales del Grupo iad.')}</li>
                   </ul>
                 </li>
                 <li>
@@ -52,6 +53,14 @@ const FaqPage = () => {
                   >casual chic</a>
                 </li>
               </ul>
+              <StaticImage
+                className="dress-code-caption"
+                src="../assets/images/casual-chic.png"
+                placeholder="blur"
+                alt="casual chic"
+                width={600}
+                height={200}
+                />
             </li>
             <li>
               <p className="faq-list__question">{t('¿Puedo venir con un acompañante?')}</p>
@@ -128,7 +137,7 @@ const FaqPage = () => {
             <li>
               <p className="faq-list__question">{t('¿Tienes más preguntas?')}</p>
               <ul className="faq-list__answers">
-                <li><strong>{t('Contacta con')} <a
+                <li>{t('Contacta con')} <strong><a
                   href="#mailgo"
                   data-address="eventos"
                   data-domain="iadgroup.es"
