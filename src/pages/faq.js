@@ -12,7 +12,7 @@ const FaqPage = () => {
         <div className="container">
           <div className="row">
             <div class="col-12">
-              <h1 className="mt-5 mb-3">{t('Preguntas Frecuentes')}</h1>
+              <h2 className="orange-title mt-5 mb-3">{t('Preguntas Frecuentes')}</h2>
               <ul className="faq-list">
                 <li>
                   <p className="faq-list__question">{t('Quién puede asistir al evento')}</p>
