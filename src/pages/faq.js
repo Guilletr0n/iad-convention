@@ -18,7 +18,7 @@ const FaqPage = () => {
                   <p className="faq-list__question">{t('Quién puede asistir al evento')}</p>
                   <ul className="faq-list__answers">
                     <li>{t('Todos los asesores y managers')}</li>
-                    <li>{t('También podrán asistir')} <strong>{t('tambien managers internacionales')}</strong></li>
+                    <li>{t('También podrán asistir')} <strong>{t('tambien managers internacionales')}</strong> {t('can also attend')}</li>
                     <li>{t('Miembros de la')} <strong>{t('sede iad España')}</strong> {t('y el resto de filiales del Grupo iad')}.</li>
                   </ul>
                 </li>
@@ -58,8 +58,6 @@ const FaqPage = () => {
                 src="../assets/images/casual-chic.png"
                 placeholder="blur"
                 alt="casual chic"
-                width={600}
-                height={200}
                 />
             </li>
             <li>
@@ -83,7 +81,7 @@ const FaqPage = () => {
               <p className="faq-list__question">{t('¿Puedo comprar entradas a mis ahijados o a mi equipo?')}</p>
               <ul className="faq-list__answers">
                 <li>{t('Sí, es posible en la página de compra de tus entradas')} <strong>{t('datos del asistente')}</strong>
-                <span> {t('y pon tus datos en')}</span> <strong>{t('Datos comprador')}</strong>. {t('De esta forma')}</li>
+                <span> {t('y pon tus datos en')}</span> <strong>{t('Datos comprador')}</strong>{t('De esta forma')}</li>
               </ul>
             </li>
             <li>

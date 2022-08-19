@@ -117,7 +117,7 @@ class Header extends Component {
                       className="nav-link text-expanded"
                       to="/faq"
                     >
-                      {t('FAQ')}
+                      FAQS
                     </Link>
                    </li>
                     <li
