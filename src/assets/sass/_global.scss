@@ -346,6 +346,9 @@ h1 {
     list-style-type: decimal;
     padding: 0;
     margin-top: 2rem;
+    li::marker {
+      font-weight: bold;
+    }
     p {
       margin-top: 1rem;
     }

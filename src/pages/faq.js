@@ -33,11 +33,11 @@ const FaqPage = () => {
               <p className="faq-list__question">{t('Tarifas del evento')}</p>
               <ul className="faq-list__answers">
                 <li>
-                  <strong>{t('Early Bird')}</strong> {t('Precio 65,00€')}
+                  <strong>{t('Early Bird')}.</strong> {t('Precio 65,00€')}
                   <p>{t('*La tarifa “Early Bird,” de coste')}</p>
                 </li>
                 <li>
-                <strong>{t('Full Price')}</strong> {t('Precio 89,00€ (IVA no incluido)')}.
+                <strong>{t('Full Price')}.</strong> {t('Precio 89,00€ (IVA no incluido)')}.
                 </li>
                 <li>{t('Managers internacionales con')}</li>
               </ul>
